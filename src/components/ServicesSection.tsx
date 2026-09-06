@@ -53,7 +53,7 @@ export default function ServicesSection() {
                   src={service.image}
                   alt={service.alt}
                   width={700}
-                  height={525}
+                  height={700}
                 />
                 <div className="card-body">
                   <h3>{service.title}</h3>

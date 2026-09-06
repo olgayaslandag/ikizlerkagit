@@ -275,7 +275,7 @@ h2 em {
     height: auto;
 }
 .card-inner > img {
-    aspect-ratio: 4/3;
+    aspect-ratio: 1;
     width: 100%;
     object-fit: cover;
     filter: saturate(0.8);
