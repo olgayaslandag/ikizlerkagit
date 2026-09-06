@@ -5,6 +5,7 @@
     --muted: #6c726e;
     --line: #dfe4e0;
     --soft: #f7f8f6;
+    --header-height: 60px;
 }
 * {
     box-sizing: border-box;
@@ -20,8 +21,12 @@ body {
     background: #fff;
 }
 .site-header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 20;
+    background: #fff;
 }
 .brand {
     display: inline-block;
@@ -94,8 +99,9 @@ body {
     align-items: center;
 }
 .hero {
-    height: calc(100svh - var(--header-height));
+    height: 100svh;
     min-height: 620px;
+    padding-top: var(--header-height);
     background:
         linear-gradient(
             90deg,
@@ -515,8 +521,7 @@ footer a {
         padding: 10px 0;
     }
     .hero {
-        height: auto;
-        min-height: 80svh;
+        min-height: 100svh;
     }
     .hero-side {
         right: 4%;
@@ -653,7 +658,7 @@ footer a {
         font-size: 22px;
     }
     .hero {
-        height: 720px;
+        height: 100svh;
     }
     .hero-copy {
     }
