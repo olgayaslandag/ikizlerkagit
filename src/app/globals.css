@@ -15,7 +15,7 @@ html {
 body {
     margin: 0;
     color: var(--ink);
-    font-family: Manrope, Arial, sans-serif;
+    font-family: var(--font-manrope), Manrope, Arial, sans-serif;
     font-size: 14px;
     background: #fff;
 }

@@ -1,0 +1,79 @@
+"use client";
+
+import Image from "next/image";
+import { useState } from "react";
+
+const NAV_LINKS = [
+  { href: "#anasayfa", label: "Ana Sayfa" },
+  { href: "#kurumsal", label: "Kurumsal" },
+  { href: "#hizmetler", label: "Hizmetlerimiz" },
+  { href: "#palet", label: "İkizler Palet" },
+  { href: "#surec", label: "Sürdürülebilirlik" },
+  { href: "#haberler", label: "Haberler" },
+  { href: "#cozum-ortaklarimiz", label: "Çözüm Ortaklarımız" },
+  { href: "#iletisim", label: "İletişim" },
+];
+
+export default function SiteHeader() {
+  const [expanded, setExpanded] = useState(false);
+  const [active, setActive] = useState("#anasayfa");
+
+  const handleNavClick = (href: string) => {
+    setActive(href);
+    setExpanded(false);
+  };
+
+  return (
+    <header className="site-header">
+      <nav className="navbar navbar-expand-lg container py-3" aria-label="Ana navigasyon">
+        <a
+          className="brand"
+          href="#anasayfa"
+          aria-label="İkizler Kağıt ana sayfa"
+          onClick={() => handleNavClick("#anasayfa")}
+        >
+          <Image
+            src="/assets/img/ikizler_logo.png"
+            alt="İkizler Kağıt"
+            className="brand-img"
+            width={1062}
+            height={293}
+          />
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          aria-controls="mainNav"
+          aria-expanded={expanded}
+          aria-label="Menüyü aç"
+          onClick={() => setExpanded((prev) => !prev)}
+        >
+          <i className="bi bi-list" />
+        </button>
+        <div className={`collapse navbar-collapse ${expanded ? "show" : ""}`} id="mainNav">
+          <ul className="navbar-nav mx-auto gap-lg-4">
+            {NAV_LINKS.map((link) => (
+              <li className="nav-item" key={link.href}>
+                <a
+                  className={`nav-link ${active === link.href ? "active" : ""}`}
+                  href={link.href}
+                  onClick={() => handleNavClick(link.href)}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <div className="nav-actions d-flex align-items-center gap-3">
+            <button className="search-btn" type="button" aria-label="Ara">
+              <i className="bi bi-search" />
+            </button>
+            <a className="button button-dark" href="#iletisim" onClick={() => setExpanded(false)}>
+              Teklif Al <i className="bi bi-arrow-up-right" />
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+  );
+}
