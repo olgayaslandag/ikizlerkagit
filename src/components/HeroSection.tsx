@@ -3,8 +3,8 @@
 import { useEffect, useRef } from "react";
 
 const HERO_IMAGES = [
-  "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1800&q=90",
   "https://images.unsplash.com/photo-1604187351574-c75ca79f5807?auto=format&fit=crop&w=1800&q=90",
+  "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1800&q=90",
   "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=1800&q=90",
 ];
 
@@ -20,7 +20,7 @@ export default function HeroSection() {
       const isMobile = window.matchMedia("(max-width: 575px)").matches;
       const gradient = isMobile
         ? "linear-gradient(180deg, rgba(255,255,255,.97) 0%, rgba(255,255,255,.72) 46%, rgba(255,255,255,.1) 100%)"
-        : "linear-gradient(90deg, rgba(255,255,255,.99) 0%, rgba(255,255,255,.94) 29%, rgba(255,255,255,.08) 70%)";
+        : "linear-gradient(to right, rgba(255,255,255,.99), rgba(255,255,255,.94) 3.78%, rgba(255,255,255,.08) 70%)";
       hero.style.backgroundImage = `${gradient}, url('${HERO_IMAGES[current]}')`;
     };
 
