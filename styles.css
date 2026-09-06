@@ -456,7 +456,15 @@ footer {
     margin-top: 36px;
 }
 .socials a {
-    color: var(--ink);
+    color: var(--muted);
+    font-size: 1rem;
+    border: 1px solid var(--line);
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--bs-border-radius);
 }
 footer h4 {
     font-size: 14px;
