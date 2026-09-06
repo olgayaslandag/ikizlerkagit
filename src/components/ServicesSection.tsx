@@ -30,7 +30,7 @@ const SERVICES = [
 
 export default function ServicesSection() {
   return (
-    <section className="services section-space" id="hizmetler">
+    <section className="services section-space reveal" id="hizmetler">
       <div className="container">
         <div className="section-heading d-flex justify-content-between align-items-end">
           <div>

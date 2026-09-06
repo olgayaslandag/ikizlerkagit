@@ -42,8 +42,8 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer>
-      <div className="container">
+    <footer className="reveal">
+      <div className="container reveal">
         <div className="row g-4">
           <div className="col-lg-3">
             <a className="brand" href="#anasayfa">

@@ -1,6 +1,6 @@
 export default function PaletteSection() {
   return (
-    <section className="palette-banner" id="palet">
+    <section className="palette-banner reveal" id="palet">
       <div className="container d-flex align-items-center justify-content-between">
         <div className="reveal">
           <p className="eyebrow">İKİZLER PALET</p>
@@ -20,7 +20,7 @@ export default function PaletteSection() {
             Palet Ürünlerini İncele <i className="bi bi-arrow-right" />
           </a>
         </div>
-        <div className="banner-note">
+        <div className="banner-note reveal">
           DAHA FAZLA
           <br />
           KULLAN

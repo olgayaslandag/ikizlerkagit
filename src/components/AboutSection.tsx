@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <section className="about section-space" id="kurumsal">
+    <section className="about section-space reveal" id="kurumsal">
       <div className="container">
         <div className="row align-items-center g-5">
           <div className="col-lg-4 reveal">

@@ -58,7 +58,7 @@ export default function HeroSection() {
           <span className="cta-label">Hizmetlerimizi Keşfet</span>
         </div>
       </div>
-      <div className="hero-side">
+      <div className="hero-side reveal">
         <span>
           ATIKLARI
           <br />

@@ -23,7 +23,7 @@ const NEWS = [
 
 export default function NewsSection() {
   return (
-    <section className="news section-space" id="haberler">
+    <section className="news section-space reveal" id="haberler">
       <div className="container">
         <div className="section-heading d-flex justify-content-between align-items-end">
           <div>

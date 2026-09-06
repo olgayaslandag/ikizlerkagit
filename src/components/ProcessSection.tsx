@@ -9,7 +9,7 @@ const STEPS = [
 
 export default function ProcessSection() {
   return (
-    <section className="process section-space" id="surec">
+    <section className="process section-space reveal" id="surec">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-3 reveal">

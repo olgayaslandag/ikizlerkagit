@@ -23,7 +23,7 @@ const PARTNERS = [
 
 export default function PartnersSection() {
   return (
-    <section className="solutions-partners section-space" id="cozum-ortaklarimiz">
+    <section className="solutions-partners section-space reveal" id="cozum-ortaklarimiz">
       <div className="container">
         <div className="section-heading">
           <div>

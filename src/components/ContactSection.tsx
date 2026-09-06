@@ -1,7 +1,7 @@
 export default function ContactSection() {
   return (
-    <section className="final-cta" id="iletisim">
-      <div className="container d-flex align-items-center justify-content-between">
+    <section className="final-cta reveal" id="iletisim">
+      <div className="container d-flex align-items-center justify-content-between reveal">
         <p className="eyebrow">
           DAHA TEMİZ
           <br />
