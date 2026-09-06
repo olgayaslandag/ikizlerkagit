@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const NAV_LINKS = [
   { href: "#anasayfa", label: "Ana Sayfa" },
@@ -17,6 +17,23 @@ const NAV_LINKS = [
 export default function SiteHeader() {
   const [expanded, setExpanded] = useState(false);
   const [active, setActive] = useState("#anasayfa");
+  const headerRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const header = headerRef.current;
+    if (!header) return;
+
+    const syncHeight = () => {
+      const height = header.getBoundingClientRect().height;
+      document.documentElement.style.setProperty("--header-height", `${height}px`);
+    };
+
+    syncHeight();
+
+    const observer = new ResizeObserver(syncHeight);
+    observer.observe(header);
+    return () => observer.disconnect();
+  }, []);
 
   const handleNavClick = (href: string) => {
     setActive(href);
@@ -24,7 +41,7 @@ export default function SiteHeader() {
   };
 
   return (
-    <header className="site-header">
+    <header className="site-header" ref={headerRef}>
       <nav className="navbar navbar-expand-lg container py-3" aria-label="Ana navigasyon">
         <a
           className="brand"

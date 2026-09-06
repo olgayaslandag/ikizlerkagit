@@ -92,8 +92,6 @@ body {
     color: var(--dark);
 }
 .site-header > .navbar {
-    height: var(--header-height);
-    min-height: var(--header-height);
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     align-items: center;
