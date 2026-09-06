@@ -452,7 +452,7 @@ footer {
 }
 .socials {
     display: flex;
-    gap: 18px;
+    gap: 0.5rem;
     margin-top: 36px;
 }
 .socials a {
