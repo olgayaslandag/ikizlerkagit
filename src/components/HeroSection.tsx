@@ -19,8 +19,8 @@ export default function HeroSection() {
     const apply = () => {
       const isMobile = window.matchMedia("(max-width: 575px)").matches;
       const gradient = isMobile
-        ? "linear-gradient(180deg, rgba(255,255,255,.97) 0%, rgba(255,255,255,.72) 46%, rgba(255,255,255,.1) 100%)"
-        : "linear-gradient(to right, rgba(255,255,255,.99), rgba(255,255,255,.94) 3.78%, rgba(255,255,255,.08) 45.8%)";
+        ? "linear-gradient(180deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.35) 46%, rgba(0,0,0,.08) 100%)"
+        : "linear-gradient(to right, rgba(0,0,0,.6), rgba(0,0,0,.5) 3.78%, rgba(0,0,0,.08) 45.8%)";
       hero.style.backgroundImage = `${gradient}, url('${HERO_IMAGES[current]}')`;
     };
 

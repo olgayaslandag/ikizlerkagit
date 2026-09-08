@@ -13,7 +13,7 @@ export default function ProcessSection() {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-3 reveal">
-            <p className="eyebrow">ATIKIN YOLCULUĞU</p>
+             <p className="eyebrow green">ATIKIN YOLCULUĞU</p>
             <h2>
               Doğaya
               <br />

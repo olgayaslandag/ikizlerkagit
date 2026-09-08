@@ -27,7 +27,7 @@ export default function NewsSection() {
       <div className="container">
         <div className="section-heading d-flex justify-content-between align-items-end">
           <div>
-            <p className="eyebrow">BİZDEN HABERLER</p>
+             <p className="eyebrow green">BİZDEN HABERLER</p>
             <h2>Güncel Gelişmeler</h2>
           </div>
           <a className="text-link" href="#haberler">

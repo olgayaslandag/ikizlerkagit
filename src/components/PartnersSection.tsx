@@ -27,7 +27,7 @@ export default function PartnersSection() {
       <div className="container">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">İŞ BİRLİĞİ</p>
+             <p className="eyebrow green">İŞ BİRLİĞİ</p>
             <h2>Çözüm Ortaklarımız</h2>
             <p className="section-subtitle">
               Güvenilir ortaklarımızla birlikte, geri dönüşümde sürdürülebilir değer yaratıyoruz.

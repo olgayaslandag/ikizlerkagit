@@ -34,7 +34,7 @@ export default function ServicesSection() {
       <div className="container">
         <div className="section-heading d-flex justify-content-between align-items-end">
           <div>
-            <p className="eyebrow">HİZMETLERİMİZ</p>
+             <p className="eyebrow green">HİZMETLERİMİZ</p>
             <h2>
               Değeri olan her atık,
               <br />

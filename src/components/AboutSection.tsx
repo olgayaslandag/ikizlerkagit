@@ -6,7 +6,7 @@ export default function AboutSection() {
       <div className="container">
         <div className="row align-items-center g-5">
           <div className="col-lg-4 reveal">
-            <p className="eyebrow">HAKKIMIZDA</p>
+             <p className="eyebrow green">HAKKIMIZDA</p>
             <h2>
               Tecrübemizle <em>daha temiz</em>
               <br />

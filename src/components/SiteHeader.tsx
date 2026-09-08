@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 
 const NAV_LINKS = [
-  { href: "#anasayfa", label: "Ana Sayfa" },
   { href: "#kurumsal", label: "Kurumsal" },
   { href: "#hizmetler", label: "Hizmetlerimiz" },
   { href: "#palet", label: "İkizler Palet" },
