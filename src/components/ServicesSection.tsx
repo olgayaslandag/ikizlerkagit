@@ -3,19 +3,19 @@ import Image from "next/image";
 const SERVICES = [
   {
     image:
-      "https://images.unsplash.com/photo-1604187351574-c75ca79f5807?auto=format&fit=crop&w=700&q=85",
-    alt: "Balya halindeki kartonlar",
+      "https://images.unsplash.com/photo-1756628920837-8d603a9ddded?auto=format&fit=crop&w=700&q=85",
+    alt: "Karton ve ambalaj atıkları",
     title: "Ambalaj Atığı Toplama",
     text: "Kağıt, karton, plastik, metal, cam ve diğer ambalaj atıklarını kaynağında topluyoruz.",
   },
   {
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=700&q=85",
+    image: "https://images.unsplash.com/photo-1725677187724-a492e46cd672?auto=format&fit=crop&w=700&q=85",
     alt: "Güvenli evrak ve arşiv imha",
     title: "Güvenli Evrak ve Arşiv İmha",
     text: "Gizli belge ve arşivlerinizi güvenle imha ediyor, doğaya kazandırıyoruz.",
   },
   {
-    image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=700&q=85",
+    image: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=700&q=85",
     alt: "Kurumsal atık yönetimi",
     title: "Kurumsal Atık Yönetimi",
     text: "Belediyeler, kamu kurumları ve işletmeler için özel çözümler sunuyoruz.",

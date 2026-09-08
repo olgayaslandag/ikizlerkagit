@@ -21,13 +21,13 @@ export default function AboutSection() {
             </a>
           </div>
           <div className="col-lg-5">
-            <Image
-              className="about-image reveal"
-              src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?auto=format&fit=crop&w=1100&q=85"
-              alt="Geri dönüşüm tesisinde üretim hattı"
-              width={1100}
-              height={733}
-            />
+             <Image
+               className="about-image reveal"
+               src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=1100&q=85"
+               alt="Geri dönüşüm tesisinde üretim hattı"
+               width={1100}
+               height={733}
+             />
           </div>
           <div className="col-lg-3 stats reveal">
             <div className="stats-inner">

@@ -198,7 +198,7 @@ body {
             rgba(0, 0, 0, 0.5) 3.78%,
             rgba(0, 0, 0, 0.08) 45.8%
         ),
-        url("https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1800&q=90")
+        url("https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1920&q=90")
             center/cover;
     position: relative;
     overflow: hidden;
@@ -450,7 +450,7 @@ h2 em {
     color: #fff;
     background:
         linear-gradient(90deg, rgba(4, 38, 25, 0.97), rgba(4, 38, 25, 0.4)),
-        url("https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=1800&q=85")
+        url("https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=1920&q=85")
             center/cover;
 }
 .palette-banner h2 {
