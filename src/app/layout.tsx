@@ -4,6 +4,7 @@ import { Manrope } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./globals.css";
+import Preloader from "@/components/Preloader";
 
 const manrope = Manrope({
   subsets: ["latin", "latin-ext"],
@@ -32,7 +33,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr" className={manrope.variable}>
-      <body>{children}</body>
+      <body>
+        <Preloader />
+        {children}
+      </body>
     </html>
   );
 }

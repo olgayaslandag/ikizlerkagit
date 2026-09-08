@@ -95,7 +95,7 @@ export default function Footer() {
         </div>
         <div className="footer-bottom">
           <span>© {year} İkizler Kağıt. Tüm hakları saklıdır.</span>
-          <span>Gizlilik Politikası　|　Kullanım Şartları</span>
+          <a href="/kvkk">Gizlilik Politikası</a>
         </div>
       </div>
     </footer>

@@ -7,6 +7,33 @@
     --soft: #f7f8f6;
     --header-height: 60px;
 }
+.preloader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+.preloader--hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.preloader-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.preloader-logo {
+    height: clamp(80px, 18vw, 180px);
+    width: auto;
+    opacity: 0.9;
+}
 * {
     box-sizing: border-box;
 }
@@ -48,11 +75,75 @@ body {
     color: #777;
     padding: 13px 0 !important;
     line-height: 2rem;
+    border-bottom: 2px solid transparent;
 }
 .nav-link.active,
 .nav-link:hover {
     color: var(--ink);
-    border-bottom: 1px solid var(--green);
+    border-bottom: 2px solid var(--green);
+}
+.nav-item.dropdown {
+    position: relative;
+}
+.nav-item.dropdown .dropdown-toggle::after {
+    display: none;
+}
+.nav-item.dropdown .dropdown-toggle i {
+    font-size: 10px;
+}
+.nav-item.dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 8px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+}
+.nav-item.dropdown:hover .dropdown-menu,
+.nav-item.dropdown .dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(4px);
+}
+.nav-item.dropdown .dropdown-item {
+    display: block;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: var(--ink);
+    text-decoration: none;
+    transition: background 0.15s ease, color 0.15s ease;
+    white-space: nowrap;
+}
+.nav-item.dropdown .dropdown-item:hover {
+    background: var(--soft);
+    color: var(--green);
+}
+.kvkk-section h1 {
+    font-size: clamp(28px, 3vw, 42px);
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+}
+.kvkk-content h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 28px;
+    margin-bottom: 10px;
+    color: var(--ink);
+}
+.kvkk-content p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #4a504c;
+    margin-bottom: 16px;
 }
 .search-btn {
     border: 0;
