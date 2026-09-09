@@ -307,7 +307,7 @@ h2 em {
     color: var(--green);
 }
 .hero-text {
-    font-size: clamp(14px, 1.1vw, 16px);
+    font-size: clamp(16px, 2.5vw, 22px);
     line-height: 1.55;
     color: #e9f0eb;
     margin-bottom: clamp(16px, 1.8vw, 24px);
