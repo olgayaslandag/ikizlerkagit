@@ -450,7 +450,7 @@ h2 em {
     color: #fff;
     background:
         linear-gradient(90deg, rgba(4, 38, 25, 0.97), rgba(4, 38, 25, 0.4)),
-        url("https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=1920&q=85")
+        url("https://ikizlerkagit.com.tr/wp-content/uploads/2020/11/paletlik_09.jpg")
             center/cover;
 }
 .palette-banner h2 {
@@ -771,11 +771,20 @@ footer a {
         margin-bottom: 28px;
         line-height: 5rem;
     }
+    .hero h1 {
+        font-size: 4rem;
+        letter-spacing: 0;
+        margin-bottom: 28px;
+        line-height: 4rem;
+    }
+    .hero h1 em {
+        color: inherit;
+    }
     h2 {
         font-size: 2rem;
     }
     .hero-text {
-        font-size: 17px;
+        font-size: 22px;
         margin-bottom: 25px;
     }
     .circle-link {

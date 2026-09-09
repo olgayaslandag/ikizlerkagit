@@ -4,6 +4,7 @@ const nextConfig = {
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "images.unsplash.com" },
+      { protocol: "https", hostname: "ikizlerkagit.com.tr" },
       { protocol: "https", hostname: "www.freelogovectors.net" },
       { protocol: "https", hostname: "**.fbcdn.net" },
       { protocol: "https", hostname: "vectorseek.com" },

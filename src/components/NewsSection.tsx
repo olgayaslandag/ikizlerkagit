@@ -2,20 +2,20 @@ import Image from "next/image";
 
 const NEWS = [
   {
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=500&q=85",
-    alt: "Geri dönüşüm kamyonu",
+    image: "https://images.unsplash.com/photo-1542744095-291d1f67b221?auto=format&fit=crop&w=500&q=85",
+    alt: "Okulda geri dönüşüm eğitimi",
     date: "12 Eylül 2024",
     title: "Sıfır Atık İçin Okullarda Bilgilendirme Çalışmalarımız",
   },
   {
-    image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=500&q=85",
-    alt: "Depo içi",
+    image: "https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=500&q=85",
+    alt: "Geri dönüşüm farkındalık etkinliği",
     date: "5 Eylül 2024",
-    title: "Esenyurt’ta Geri Dönüşüm Farkındalık Etkinliği",
+    title: "Esenyurt'ta Geri Dönüşüm Farkındalık Etkinliği",
   },
   {
-    image: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=500&q=85",
-    alt: "Tesisimizde ayrıştırma hattı",
+    image: "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=500&q=85",
+    alt: "Tesisimizde yeni ayrıştırma hattı",
     date: "19 Temmuz 2024",
     title: "Tesisimizde Yeni Ayrıştırma Hattı Devrede",
   },

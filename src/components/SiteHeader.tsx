@@ -71,6 +71,17 @@ export default function SiteHeader() {
           <i className="bi bi-list" />
         </button>
         <div className={`collapse navbar-collapse ${expanded ? "show" : ""}`} id="mainNav">
+          <div className="d-lg-none mb-3">
+            <a className="brand d-inline-block" href="#anasayfa" aria-label="İkizler Kağıt ana sayfa" onClick={() => handleNavClick("#anasayfa")}>
+              <Image
+                src="/assets/img/ikizler_logo.png"
+                alt="İkizler Kağıt"
+                className="brand-img"
+                width={1062}
+                height={293}
+              />
+            </a>
+          </div>
           <ul className="navbar-nav mx-auto gap-lg-4">
             {NAV_LINKS.map((link) => {
               if (link.dropdown) {
