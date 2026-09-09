@@ -23,7 +23,7 @@ export default function AboutSection() {
           <div className="col-lg-5">
 <Image
                 className="about-image reveal"
-                src="https://ikizlerkagit.com.tr/wp-content/uploads/2018/03/IMGP0905.jpg"
+                src="/assets/img/slider01.png"
                 alt="İkizler Kağıt geri dönüşüm tesisi"
                 width={1100}
                 height={733}

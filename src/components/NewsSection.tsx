@@ -14,7 +14,7 @@ const NEWS = [
     title: "Esenyurt'ta Geri Dönüşüm Farkındalık Etkinliği",
   },
   {
-    image: "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=500&q=85",
+    image: "/assets/img/slider02.png",
     alt: "Tesisimizde yeni ayrıştırma hattı",
     date: "19 Temmuz 2024",
     title: "Tesisimizde Yeni Ayrıştırma Hattı Devrede",

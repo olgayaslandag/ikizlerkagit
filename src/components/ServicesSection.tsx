@@ -15,8 +15,8 @@ const SERVICES = [
     text: "Gizli belge ve arşivlerinizi güvenle imha ediyor, doğaya kazandırıyoruz.",
   },
   {
-    image: "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=700&q=85",
-    alt: "Kurumsal atık yönetimi tesisi",
+    image: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=700&q=85",
+    alt: "Geri dönüşüm tesisimizde ayrıştırma prosesi",
     title: "Kurumsal Atık Yönetimi",
     text: "Belediyeler, kamu kurumları ve işletmeler için özel çözümler sunuyoruz.",
   },

@@ -1,10 +1,11 @@
 import { Fragment } from "react";
+import Image from "next/image";
 
 const STEPS = [
-  { number: "01", icon: "bi-truck", title: "Toplama", text: "Atıkları kaynağında toplarız." },
-  { number: "02", icon: "bi-gear", title: "Taşıma", text: "Güvenli şekilde tesisimize ulaştırırız." },
-  { number: "03", icon: "bi-layers", title: "Ayrıştırma", text: "Modern tesisimizde türlerine göre ayırırız." },
-  { number: "04", icon: "bi-recycle", title: "Geri Kazanım", text: "Atıkları ekonomiye kazandırırız." },
+  { number: "01", image: "https://ikizlerkagit.com.tr/wp-content/uploads/2018/06/IMG-20171109-WA0016.jpg", title: "Toplama", text: "Atıkları kaynağında toplarız." },
+  { number: "02", image: "https://ikizlerkagit.com.tr/wp-content/uploads/2018/03/IMGP0911.jpg", title: "Taşıma", text: "Güvenli şekilde tesisimize ulaştırırız." },
+  { number: "03", image: "/assets/img/slider02.png", title: "Ayrıştırma", text: "Modern tesisimizde türlerine göre ayırırız." },
+  { number: "04", image: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=500&q=85", title: "Geri Kazanım", text: "Atıkları ekonomiye kazandırırız." },
 ];
 
 export default function ProcessSection() {
@@ -30,7 +31,7 @@ export default function ProcessSection() {
                 <Fragment key={step.number}>
                   <div className="step reveal">
                     <b>{step.number}</b>
-                    <i className={`bi ${step.icon}`} />
+                    <Image src={step.image} alt={step.title} width={700} height={700} className="step-image" />
                     <strong>{step.title}</strong>
                     <small>{step.text}</small>
                   </div>

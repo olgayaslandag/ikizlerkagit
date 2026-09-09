@@ -41,103 +41,103 @@ export default function SiteHeader() {
   const handleNavClick = (href: string) => {
     setActive(href);
     setExpanded(false);
+    setDropdownOpen(false);
   };
 
   return (
-    <header className="site-header" ref={headerRef}>
-      <nav className="navbar navbar-expand-lg container py-3" aria-label="Ana navigasyon">
-        <a
-          className="brand"
-          href="#anasayfa"
-          aria-label="İkizler Kağıt ana sayfa"
-          onClick={() => handleNavClick("#anasayfa")}
-        >
-          <Image
-            src="/assets/img/ikizler_logo.png"
-            alt="İkizler Kağıt"
-            className="brand-img"
-            width={1062}
-            height={293}
-          />
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          aria-controls="mainNav"
-          aria-expanded={expanded}
-          aria-label="Menüyü aç"
-          onClick={() => setExpanded((prev) => !prev)}
-        >
-          <i className="bi bi-list" />
-        </button>
-        <div className={`collapse navbar-collapse ${expanded ? "show" : ""}`} id="mainNav">
-          <div className="d-lg-none mb-3">
-            <a className="brand d-inline-block" href="#anasayfa" aria-label="İkizler Kağıt ana sayfa" onClick={() => handleNavClick("#anasayfa")}>
-              <Image
-                src="/assets/img/ikizler_logo.png"
-                alt="İkizler Kağıt"
-                className="brand-img"
-                width={1062}
-                height={293}
-              />
-            </a>
-          </div>
-          <ul className="navbar-nav mx-auto gap-lg-4">
-            {NAV_LINKS.map((link) => {
-              if (link.dropdown) {
+    <header className={`site-header${expanded ? " menu-open" : ""}`} ref={headerRef}>
+      <nav className="navbar navbar-expand-lg" aria-label="Ana navigasyon">
+        <div className="container container-fluid-mobile">
+          <a
+            className="brand"
+            href="#anasayfa"
+            aria-label="İkizler Kağıt ana sayfa"
+            onClick={() => handleNavClick("#anasayfa")}
+          >
+            <Image
+              src="/assets/img/ikizler_logo.png"
+              alt="İkizler Kağıt"
+              className="brand-img"
+              width={1062}
+              height={293}
+            />
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            aria-controls="mainNav"
+            aria-expanded={expanded}
+            aria-label={expanded ? "Menüyü kapat" : "Menüyü aç"}
+            onClick={() => setExpanded((prev) => !prev)}
+          >
+            <i className={`bi ${expanded ? "bi-x" : "bi-list"} toggler-icon`} />
+          </button>
+          <div className={`collapse navbar-collapse ${expanded ? "show" : ""}`} id="mainNav">
+            <ul className="navbar-nav mx-auto gap-lg-4">
+              {NAV_LINKS.map((link) => {
+                if (link.dropdown) {
+                  return (
+                    <li className="nav-item dropdown" key={link.href}>
+                      <a
+                        className={`nav-link dropdown-toggle ${active === link.href ? "active" : ""}`}
+                        href={link.href}
+                        role="button"
+                        aria-expanded={dropdownOpen}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setDropdownOpen((prev) => !prev);
+                        }}
+                      >
+                        {link.label} <i className="bi bi-chevron-down ms-1 chevron-icon" />
+                      </a>
+                      <ul className={`dropdown-menu ${dropdownOpen ? "show" : ""}`}>
+                        {link.children?.map((child) => (
+                          <li key={child.href}>
+                            <a
+                              className="dropdown-item"
+                              href={child.href}
+                              onClick={() => {
+                                handleNavClick(child.href);
+                                setDropdownOpen(false);
+                              }}
+                            >
+                              {child.label}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </li>
+                  );
+                }
                 return (
-                  <li className="nav-item dropdown" key={link.href}>
+                  <li className="nav-item" key={link.href}>
                     <a
-                      className={`nav-link dropdown-toggle ${active === link.href ? "active" : ""}`}
+                      className={`nav-link ${active === link.href ? "active" : ""}`}
                       href={link.href}
-                      role="button"
-                      aria-expanded={dropdownOpen}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setDropdownOpen((prev) => !prev);
-                      }}
+                      onClick={() => handleNavClick(link.href)}
                     >
-                      {link.label} <i className="bi bi-chevron-down ms-1" />
+                      {link.label}
                     </a>
-                    <ul className={`dropdown-menu ${dropdownOpen ? "show" : ""}`}>
-                      {link.children?.map((child) => (
-                        <li key={child.href}>
-                          <a
-                            className="dropdown-item"
-                            href={child.href}
-                            onClick={() => {
-                              handleNavClick(child.href);
-                              setDropdownOpen(false);
-                            }}
-                          >
-                            {child.label}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
                   </li>
                 );
-              }
-              return (
-                <li className="nav-item" key={link.href}>
-                  <a
-                    className={`nav-link ${active === link.href ? "active" : ""}`}
-                    href={link.href}
-                    onClick={() => handleNavClick(link.href)}
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-          <div className="nav-actions d-flex align-items-center gap-3">
-            <button className="search-btn" type="button" aria-label="Ara">
-              <i className="bi bi-search" />
-            </button>
-            <a className="button button-dark" href="#iletisim" onClick={() => setExpanded(false)}>
-              Teklif Al <i className="bi bi-arrow-up-right" />
-            </a>
+              })}
+            </ul>
+            <div className="nav-actions d-none d-lg-flex align-items-center gap-3">
+              <button className="search-btn" type="button" aria-label="Ara">
+                <i className="bi bi-search" />
+              </button>
+              <a className="button button-dark" href="#iletisim" onClick={() => setExpanded(false)}>
+                Teklif Al <i className="bi bi-arrow-up-right" />
+              </a>
+            </div>
+            <div className="nav-actions-mobile d-lg-none mt-3 pt-3 border-top">
+              <button className="search-btn mb-2" type="button" aria-label="Ara">
+                <i className="bi bi-search me-2" /> Arama
+              </button>
+              <a className="button button-dark w-100 justify-content-center" href="#iletisim" onClick={() => setExpanded(false)}>
+                Teklif Al <i className="bi bi-arrow-up-right" />
+              </a>
+            </div>
           </div>
         </div>
       </nav>
