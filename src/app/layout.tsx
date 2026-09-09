@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "İkizler Kağıt | Dönüşüm Burada Başlar",
   description: "İkizler Kağıt geri dönüşüm ve atık yönetimi çözümleri.",
   icons: {
-    icon: "/assets/img/ikizler_logo.png",
+    icon: "/favicon.png",
   },
 };
 

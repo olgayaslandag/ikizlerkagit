@@ -82,8 +82,8 @@ export default function Footer() {
           ))}
           <div className="col-lg-2">
             <h4>İletişim</h4>
-            <a href="tel:+902126725410">
-              <i className="bi bi-telephone" /> +90 212 672 54 10
+            <a href="tel:+902128861090">
+              <i className="bi bi-telephone" /> +90 212 886 10 90
             </a>
             <a href="mailto:info@ikizlerkagit.com.tr">
               <i className="bi bi-envelope" /> info@ikizlerkagit.com.tr

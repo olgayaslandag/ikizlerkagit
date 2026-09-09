@@ -58,7 +58,7 @@ export default function SiteHeader() {
       <div className="topbar d-none d-lg-block">
         <div className="container d-flex justify-content-between align-items-center">
           <div className="topbar-contact">
-            <a href="tel:+902128861090"><i className="bi bi-telephone me-2" /> 0212 886 10 90</a>
+             <a href="tel:+902128861090"><i className="bi bi-telephone me-2" /> +90 212 886 10 90</a>
             <a href="mailto:info@ikizlerkagit.com.tr" className="ms-3"><i className="bi bi-envelope me-2" /> info@ikizlerkagit.com.tr</a>
           </div>
           <div className="topbar-social">
