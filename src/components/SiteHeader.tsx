@@ -127,7 +127,7 @@ export default function SiteHeader() {
                 <i className="bi bi-search" />
               </button>
               <a className="button button-dark" href="#iletisim" onClick={() => setExpanded(false)}>
-                Teklif Al <i className="bi bi-arrow-up-right" />
+                Çözüm Talep Et <i className="bi bi-arrow-up-right" />
               </a>
             </div>
             <div className="nav-actions-mobile d-lg-none mt-3 pt-3 border-top">
@@ -135,7 +135,7 @@ export default function SiteHeader() {
                 <i className="bi bi-search me-2" /> Arama
               </button>
               <a className="button button-dark w-100 justify-content-center" href="#iletisim" onClick={() => setExpanded(false)}>
-                Teklif Al <i className="bi bi-arrow-up-right" />
+                Çözüm Talep Et <i className="bi bi-arrow-up-right" />
               </a>
             </div>
           </div>
