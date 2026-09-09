@@ -39,6 +39,7 @@
 }
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body {
     margin: 0;
@@ -46,10 +47,7 @@ body {
     font-family: var(--font-manrope), Manrope, Arial, sans-serif;
     font-size: 14px;
     background: #fff;
-}
-.container-fluid-mobile {
-    padding-left: 20px;
-    padding-right: 20px;
+    overflow-x: hidden;
 }
 .site-header {
     position: fixed;
@@ -60,6 +58,37 @@ body {
     background: #fff;
     border-bottom: 1px solid var(--line);
     transition: box-shadow 0.2s ease, border-color 0.2s ease;
+    overflow: hidden;
+}
+.topbar {
+    background: var(--green);
+    color: #fff;
+    font-size: 13px;
+    padding: 8px 0;
+}
+.topbar a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.95;
+    transition: opacity 0.15s ease;
+}
+.topbar a:hover {
+    opacity: 1;
+    text-decoration: none;
+    color: #fff;
+}
+.topbar-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    transition: background 0.15s ease;
+}
+.topbar-social a:hover {
+    background: rgba(255, 255, 255, 0.3);
 }
 .site-header.menu-open {
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
@@ -197,6 +226,10 @@ body {
 }
 .button-dark {
     background: var(--dark);
+    color: #fff;
+}
+.button-green {
+    background: var(--green);
     color: #fff;
 }
 .button-light {
@@ -359,6 +392,7 @@ h2 em {
     height: 290px;
     width: 100%;
     object-fit: cover;
+    border-radius: 16px;
 }
 .about p {
     color: #686e6a;
@@ -438,6 +472,10 @@ h2 em {
     height: auto !important;
     object-fit: cover;
     filter: saturate(0.8);
+}
+.services .reveal .card-inner {
+    border-radius: 16px;
+    overflow: hidden;
 }
 .card-body {
     padding: 22px 21px 25px;
@@ -547,10 +585,17 @@ h2 em {
     width: 124px;
     height: 105px;
     object-fit: cover;
+    border-radius: 16px;
 }
-.news-card div {
-    padding-right: 35px;
-}
+    .news-card div {
+        padding-right: 20px;
+    }
+    .news-card {
+        padding-right: 0;
+    }
+    .news-card > a {
+        right: 8px;
+    }
 .news-card small {
     color: #919792;
     font-size: 14px;
@@ -562,7 +607,7 @@ h2 em {
 }
 .news-card > a {
     position: absolute;
-    right: 4px;
+    right: 16px;
     bottom: 4px;
     border: 1px solid #cbd1cc;
     color: var(--ink);
@@ -679,7 +724,12 @@ footer a {
         border-top: 1px solid var(--line);
         margin-top: 0;
         max-height: calc(100svh - 60px);
+        overflow-x: hidden;
         overflow-y: auto;
+    }
+    .navbar-collapse:not(.show) {
+        overflow-y: hidden;
+        max-height: none;
     }
     .nav-actions-mobile {
         display: block;
@@ -774,20 +824,17 @@ footer a {
     .stats {
         border: 0;
         padding: 10px 0;
-        display: flex;
-        justify-content: space-between;
+        overflow-x: hidden;
+        width: 100%;
     }
     .stats div {
         display: block;
         border: 0 !important;
         padding: 0;
     }
-    .stats strong,
-    .stats span {
-        display: block;
-    }
     .stats strong {
         margin-bottom: 4px;
+        min-width: auto;
     }
     .steps {
         display: block;
@@ -851,7 +898,7 @@ footer a {
     .container {
         max-width: 1440px;
         padding-left: 52px;
-        padding-right: 52px;
+        padding-right: 60px;
     }
     body {
         font-size: 17px;
@@ -1116,5 +1163,13 @@ footer a {
     }
     .partner-logo {
         max-height: 100px;
+    }
+}
+
+/* Mobilde container padding eşitleme */
+@media (max-width: 991px) {
+    .container {
+        padding-left: 24px;
+        padding-right: 24px;
     }
 }

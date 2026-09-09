@@ -46,8 +46,21 @@ export default function SiteHeader() {
 
   return (
     <header className={`site-header${expanded ? " menu-open" : ""}`} ref={headerRef}>
+      <div className="topbar d-none d-lg-block">
+        <div className="container d-flex justify-content-between align-items-center">
+          <div className="topbar-contact">
+            <a href="tel:+902128861090"><i className="bi bi-telephone me-2" /> 0212 886 10 90</a>
+            <a href="mailto:info@ikizlerkagit.com.tr" className="ms-3"><i className="bi bi-envelope me-2" /> info@ikizlerkagit.com.tr</a>
+          </div>
+          <div className="topbar-social">
+            <a href="https://www.facebook.com/ikizlerkagitcomtr" target="_blank" rel="noopener" aria-label="Facebook"><i className="bi bi-facebook" /></a>
+            <a href="https://www.instagram.com/ikizlerkagit/" target="_blank" rel="noopener" aria-label="Instagram" className="ms-3"><i className="bi bi-instagram" /></a>
+            <a href="https://twitter.com/ikizlerkagit" target="_blank" rel="noopener" aria-label="Twitter" className="ms-3"><i className="bi bi-twitter-x" /></a>
+          </div>
+        </div>
+      </div>
       <nav className="navbar navbar-expand-lg" aria-label="Ana navigasyon">
-        <div className="container container-fluid-mobile">
+        <div className="container">
           <a
             className="brand"
             href="#anasayfa"
@@ -126,7 +139,7 @@ export default function SiteHeader() {
               <button className="search-btn" type="button" aria-label="Ara">
                 <i className="bi bi-search" />
               </button>
-              <a className="button button-dark" href="#iletisim" onClick={() => setExpanded(false)}>
+              <a className="button button-green" href="#iletisim" onClick={() => setExpanded(false)}>
                 Çözüm Talep Et <i className="bi bi-arrow-up-right" />
               </a>
             </div>
@@ -134,7 +147,7 @@ export default function SiteHeader() {
               <button className="search-btn mb-2" type="button" aria-label="Ara">
                 <i className="bi bi-search me-2" /> Arama
               </button>
-              <a className="button button-dark w-100 justify-content-center" href="#iletisim" onClick={() => setExpanded(false)}>
+              <a className="button button-green w-100 justify-content-center" href="#iletisim" onClick={() => setExpanded(false)}>
                 Çözüm Talep Et <i className="bi bi-arrow-up-right" />
               </a>
             </div>

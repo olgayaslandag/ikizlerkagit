@@ -47,7 +47,7 @@ export default function ServicesSection() {
         </div>
         <div className="row mt-3 g-3">
           {SERVICES.map((service) => (
-            <article className="col-12 col-sm-6 col-lg-3 service-card reveal" key={service.title}>
+            <article className="col-6 col-sm-6 col-lg-3 service-card reveal" key={service.title}>
               <div className="card-inner">
                 <Image
                   src={service.image}
