@@ -26,16 +26,25 @@ export default function SiteHeader() {
     const header = headerRef.current;
     if (!header) return;
 
+    let rafId: number | null = null;
+
     const syncHeight = () => {
-      const height = header.getBoundingClientRect().height;
-      document.documentElement.style.setProperty("--header-height", `${height}px`);
+      if (rafId) cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(() => {
+        const height = header.getBoundingClientRect().height;
+        document.documentElement.style.setProperty("--header-height", `${height}px`);
+        rafId = null;
+      });
     };
 
     syncHeight();
 
     const observer = new ResizeObserver(syncHeight);
     observer.observe(header);
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      if (rafId) cancelAnimationFrame(rafId);
+    };
   }, []);
 
   const handleNavClick = (href: string) => {
