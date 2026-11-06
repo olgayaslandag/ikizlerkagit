@@ -53,6 +53,9 @@ export async function generateMetadata({
     openGraph: {
       title: service.title,
       description: service.description,
+      url: `/hizmetler/${service.slug}/`,
+      siteName: "İkizler Kağıt",
+      locale: "tr_TR",
       images: [
         {
           url: service.image,
@@ -98,6 +101,20 @@ export default async function ServicePage({
 
   const { service, content } = found;
   const seo = content?.seo ?? service.seo;
+
+  // JSON-LD FAQPage Schema (koşullu)
+  const faqSchema =
+    content?.faq && content.faq.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: content.faq.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }
+      : null;
 
   // JSON-LD Service Schema
   const serviceSchema = {
@@ -158,6 +175,13 @@ export default async function ServicePage({
   return (
     <>
       <ServiceDetail service={service} content={content} allServices={allServices} />
+
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
 
       {/* JSON-LD Service Schema */}
       <script

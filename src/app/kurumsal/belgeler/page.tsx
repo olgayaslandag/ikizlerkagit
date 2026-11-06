@@ -8,10 +8,34 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { DOCUMENTS } from "@/data/documents";
 
 export const metadata: Metadata = {
-  title: "Belgeler & Lisanslar — İkizler Kağıt",
+  title: "Belgeler & Lisanslar",
   description:
     "İkizler Kağıt'ın Çevre İzin ve Lisans Belgesi ile lisans üst yazısı. Resmi belgelerimizi bu sayfadan görüntüleyebilir ve indirebilirsiniz.",
   alternates: { canonical: "/kurumsal/belgeler/" },
+  openGraph: {
+    title: "Belgeler & Lisanslar",
+    description:
+      "İkizler Kağıt'ın Çevre İzin ve Lisans Belgesi ile lisans üst yazısı. Resmi belgelerimizi bu sayfadan görüntüleyebilir ve indirebilirsiniz.",
+    url: "/kurumsal/belgeler/",
+    siteName: "İkizler Kağıt",
+    locale: "tr_TR",
+    type: "website",
+    images: [
+      {
+        url: "/assets/img/slider01.png",
+        width: 1100,
+        height: 733,
+        alt: "Belgeler & Lisanslar",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Belgeler & Lisanslar",
+    description:
+      "İkizler Kağıt'ın Çevre İzin ve Lisans Belgesi ile lisans üst yazısı. Resmi belgelerimizi bu sayfadan görüntüleyebilir ve indirebilirsiniz.",
+    images: ["/assets/img/slider01.png"],
+  },
 };
 
 export const revalidate = 3600;

@@ -8,11 +8,35 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { getServicesList } from "@/lib/api";
 
 export const metadata: Metadata = {
-  title: "Hizmetlerimiz — İkizler Kağıt",
+  title: "Hizmetlerimiz",
   description:
     "İkizler Kağıt'in 10 hizmeti: atık toplama, ayrıştırma ve presleme, güvenli evrak imha, depolama planlaması, kod levhası, yerinde personel, palet hizmeti ve lisanslı geri kazanım.",
   alternates: {
     canonical: "/hizmetler/",
+  },
+  openGraph: {
+    title: "Hizmetlerimiz",
+    description:
+      "İkizler Kağıt'in 10 hizmeti: atık toplama, ayrıştırma ve presleme, güvenli evrak imha, depolama planlaması, kod levhası, yerinde personel, palet hizmeti ve lisanslı geri kazanım.",
+    url: "/hizmetler/",
+    siteName: "İkizler Kağıt",
+    locale: "tr_TR",
+    type: "website",
+    images: [
+      {
+        url: "/assets/img/services/ambalaj-toplama.webp",
+        width: 1600,
+        height: 900,
+        alt: "Hizmetlerimiz",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hizmetlerimiz",
+    description:
+      "İkizler Kağıt'in 10 hizmeti: atık toplama, ayrıştırma ve presleme, güvenli evrak imha, depolama planlaması, kod levhası, yerinde personel, palet hizmeti ve lisanslı geri kazanım.",
+    images: ["/assets/img/services/ambalaj-toplama.webp"],
   },
 };
 

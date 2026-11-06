@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import SiteHeaderContainer from "@/components/SiteHeaderContainer";
 import FooterContainer from "@/components/FooterContainer";
+
+export const metadata: Metadata = {
+  title: "Sayfa Bulunamadı",
+  description: "Aradığınız sayfa bulunamadı.",
+  robots: { index: false, follow: false },
+};
 
 export default function NotFound() {
   return (

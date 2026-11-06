@@ -6,10 +6,34 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { COMPANY } from "@/data/company";
 
 export const metadata: Metadata = {
-  title: "Misyon & Vizyon — İkizler Kağıt",
+  title: "Misyon & Vizyon",
   description:
     "İkizler Kağıt'in misyonu, vizyonu ve temel değerleri: sürdürülebilirlik, güvenilirlik, yasal uyum, müşteri odaklılık ve sürekli iyileştirme.",
   alternates: { canonical: "/kurumsal/misyon-vizyon/" },
+  openGraph: {
+    title: "Misyon & Vizyon",
+    description:
+      "İkizler Kağıt'in misyonu, vizyonu ve temel değerleri: sürdürülebilirlik, güvenilirlik, yasal uyum, müşteri odaklılık ve sürekli iyileştirme.",
+    url: "/kurumsal/misyon-vizyon/",
+    siteName: "İkizler Kağıt",
+    locale: "tr_TR",
+    type: "website",
+    images: [
+      {
+        url: "/assets/img/hero/hero02.webp",
+        width: 1600,
+        height: 900,
+        alt: "Misyon & Vizyon",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Misyon & Vizyon",
+    description:
+      "İkizler Kağıt'in misyonu, vizyonu ve temel değerleri: sürdürülebilirlik, güvenilirlik, yasal uyum, müşteri odaklılık ve sürekli iyileştirme.",
+    images: ["/assets/img/hero/hero02.webp"],
+  },
 };
 
 export const revalidate = 3600;

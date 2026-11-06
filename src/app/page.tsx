@@ -35,6 +35,19 @@ export default async function HomePage() {
       addressRegion: "İstanbul",
       addressCountry: "TR",
     },
+    sameAs: [
+      "https://www.facebook.com/ikizlerkagitcomtr",
+      "https://www.instagram.com/ikizlerkagit/",
+      "https://twitter.com/ikizlerkagit",
+    ],
+  };
+
+  const webSiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "İkizler Kağıt",
+    url: "https://ikizlerkagit.com.tr",
+    inLanguage: "tr-TR",
   };
 
   return (
@@ -42,6 +55,10 @@ export default async function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
       />
       <SiteHeaderContainer />
       <main>

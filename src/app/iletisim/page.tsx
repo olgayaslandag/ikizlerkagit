@@ -7,10 +7,34 @@ import FooterContainer from "@/components/FooterContainer";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "İletişim — İkizler Kağıt",
+  title: "İletişim",
   description:
     "İkizler Kağıt ile iletişime geçin: telefon, e-posta, adres ve çalışma saatlerimiz, teklif formu ve tesis konumumuz. Atık yönetimi, evrak imha ve palet çözümleri için bize ulaşın.",
   alternates: { canonical: "/iletisim/" },
+  openGraph: {
+    title: "İletişim",
+    description:
+      "İkizler Kağıt ile iletişime geçin: telefon, e-posta, adres ve çalışma saatlerimiz, teklif formu ve tesis konumumuz. Atık yönetimi, evrak imha ve palet çözümleri için bize ulaşın.",
+    url: "/iletisim/",
+    siteName: "İkizler Kağıt",
+    locale: "tr_TR",
+    type: "website",
+    images: [
+      {
+        url: "/assets/img/hero/hero02.webp",
+        width: 1600,
+        height: 900,
+        alt: "İletişim",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "İletişim",
+    description:
+      "İkizler Kağıt ile iletişime geçin: telefon, e-posta, adres ve çalışma saatlerimiz, teklif formu ve tesis konumumuz. Atık yönetimi, evrak imha ve palet çözümleri için bize ulaşın.",
+    images: ["/assets/img/hero/hero02.webp"],
+  },
 };
 
 export const revalidate = 3600;

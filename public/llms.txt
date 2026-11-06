@@ -1,0 +1,35 @@
+# İkizler Kağıt
+
+İkizler Kağıt, geri dönüşüm ve atık yönetimi çözümleri sunan bir şirkettir. Esenyurt, İstanbul merkezli olarak hizmet vermektedir.
+
+## Önemli Sayfalar
+
+- [Ana Sayfa](https://ikizlerkagit.com.tr/)
+- [Hizmetler](https://ikizlerkagit.com.tr/hizmetler/)
+- [Haberler](https://ikizlerkagit.com.tr/haberler/)
+- [Palet](https://ikizlerkagit.com.tr/palet/)
+- [Kurumsal](https://ikizlerkagit.com.tr/kurumsal/)
+- [İletişim](https://ikizlerkagit.com.tr/iletisim/)
+- [KVKK](https://ikizlerkagit.com.tr/kvkk/)
+
+## Hizmetler
+
+- Ambalaj Toplama
+- Tehlikesiz Atık
+- Ayrıştırma & Presleme
+- Evrak İmha
+- Depolama Planlama
+- Kod Levhası
+- Talep Bazlı Toplama
+- Yerinde Personel
+- Palet Hizmeti
+- Lisanslı Geri Kazanım
+
+## İletişim
+
+- Telefon: +90 212 886 10 90
+- E-posta: info@ikizlerkagit.com.tr
+
+## Sitemap
+
+- [Sitemap](https://ikizlerkagit.com.tr/sitemap.xml)

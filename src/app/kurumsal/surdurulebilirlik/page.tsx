@@ -7,10 +7,34 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { SUSTAINABILITY } from "@/data/sustainability";
 
 export const metadata: Metadata = {
-  title: "Sürdürülebilirlik — İkizler Kağıt",
+  title: "Sürdürülebilirlik",
   description:
     "İkizler Kağıt'ın sürdürülebilirlik yaklaşımı: sıfır atık, kaynağında ayrıştırma, çevreye katkımız ve sosyal sorumluluk projelerimiz.",
   alternates: { canonical: "/kurumsal/surdurulebilirlik/" },
+  openGraph: {
+    title: "Sürdürülebilirlik",
+    description:
+      "İkizler Kağıt'ın sürdürülebilirlik yaklaşımı: sıfır atık, kaynağında ayrıştırma, çevreye katkımız ve sosyal sorumluluk projelerimiz.",
+    url: "/kurumsal/surdurulebilirlik/",
+    siteName: "İkizler Kağıt",
+    locale: "tr_TR",
+    type: "website",
+    images: [
+      {
+        url: "/assets/img/hero/hero02.webp",
+        width: 1600,
+        height: 900,
+        alt: "Sürdürülebilirlik",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sürdürülebilirlik",
+    description:
+      "İkizler Kağıt'ın sürdürülebilirlik yaklaşımı: sıfır atık, kaynağında ayrıştırma, çevreye katkımız ve sosyal sorumluluk projelerimiz.",
+    images: ["/assets/img/hero/hero02.webp"],
+  },
 };
 
 export const revalidate = 3600;

@@ -8,11 +8,35 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { getNewsList } from "@/lib/api";
 
 export const metadata: Metadata = {
-  title: "Haberler — İkizler Kağıt",
+  title: "Haberler",
   description:
     "İkizler Kağıt haberler ve güncel gelişmeler. Geri dönüşüm ve atık yönetimi alanındaki kurumsal haberler, projeler ve duyurular.",
   alternates: {
     canonical: "/haberler/",
+  },
+  openGraph: {
+    title: "Haberler",
+    description:
+      "İkizler Kağıt haberler ve güncel gelişmeler. Geri dönüşüm ve atık yönetimi alanındaki kurumsal haberler, projeler ve duyurular.",
+    url: "/haberler/",
+    siteName: "İkizler Kağıt",
+    locale: "tr_TR",
+    type: "website",
+    images: [
+      {
+        url: "/assets/img/news/catalca-belediyesi-bolge-calismalari.webp",
+        width: 640,
+        height: 480,
+        alt: "Haberler",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Haberler",
+    description:
+      "İkizler Kağıt haberler ve güncel gelişmeler. Geri dönüşüm ve atık yönetimi alanındaki kurumsal haberler, projeler ve duyurular.",
+    images: ["/assets/img/news/catalca-belediyesi-bolge-calismalari.webp"],
   },
 };
 

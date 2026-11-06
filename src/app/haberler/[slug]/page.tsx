@@ -61,13 +61,16 @@ export async function generateMetadata({
   const description = content?.paragraphs?.[0] ?? item.title;
 
   return {
-    title: `${item.title} — İkizler Kağıt`,
+    title: item.title,
     description,
     openGraph: {
       title: item.title,
       description,
-      images: [item.image],
+      url: `/haberler/${slug}/`,
+      siteName: "İkizler Kağıt",
+      locale: "tr_TR",
       type: "article",
+      images: [{ url: item.image, alt: item.alt }],
     },
     twitter: {
       card: "summary_large_image",
@@ -112,6 +115,7 @@ export default async function NewsDetailPage({
     "@type": "NewsArticle",
     headline: item.title,
     datePublished: item.date,
+    author: { "@type": "Organization", name: "İkizler Kağıt" },
     image: [`${SITE_URL}${item.image}`],
     articleSection: NEWS_CATEGORY_LABELS[item.category],
     publisher: {

@@ -4,11 +4,35 @@ import SiteHeaderContainer from "@/components/SiteHeaderContainer";
 import FooterContainer from "@/components/FooterContainer";
 
 export const metadata: Metadata = {
-  title: "KVKK Aydınlatma Metni — İkizler Kağıt",
+  title: "KVKK Aydınlatma Metni",
   description:
     "İkizler Kağıt'in KVKK aydınlatma metni: toplanan kişisel veriler, işleme amaçları, paylaşım koşulları, veri güvenliği önlemleri, haklarınız ve çerez politikası.",
   alternates: {
     canonical: "/kvkk/",
+  },
+  openGraph: {
+    title: "KVKK Aydınlatma Metni",
+    description:
+      "İkizler Kağıt'in KVKK aydınlatma metni: toplanan kişisel veriler, işleme amaçları, paylaşım koşulları, veri güvenliği önlemleri, haklarınız ve çerez politikası.",
+    url: "/kvkk/",
+    siteName: "İkizler Kağıt",
+    locale: "tr_TR",
+    type: "website",
+    images: [
+      {
+        url: "/assets/img/hero/hero02.webp",
+        width: 1600,
+        height: 900,
+        alt: "KVKK Aydınlatma Metni",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "KVKK Aydınlatma Metni",
+    description:
+      "İkizler Kağıt'in KVKK aydınlatma metni: toplanan kişisel veriler, işleme amaçları, paylaşım koşulları, veri güvenliği önlemleri, haklarınız ve çerez politikası.",
+    images: ["/assets/img/hero/hero02.webp"],
   },
 };
 

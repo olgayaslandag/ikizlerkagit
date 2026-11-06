@@ -7,10 +7,34 @@ import FooterContainer from "@/components/FooterContainer";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Hakkımızda — İkizler Kağıt",
+  title: "Hakkımızda",
   description:
     "1998'den bu yana geri dönüşüm ve atık yönetimi alanında hizmet veren İkizler Kağıt: tarihçemiz, vizyonumuz, misyonumuz, tesisimiz ve sertifikalarımız.",
   alternates: { canonical: "/kurumsal/" },
+  openGraph: {
+    title: "Hakkımızda",
+    description:
+      "1998'den bu yana geri dönüşüm ve atık yönetimi alanında hizmet veren İkizler Kağıt: tarihçemiz, vizyonumuz, misyonumuz, tesisimiz ve sertifikalarımız.",
+    url: "/kurumsal/",
+    siteName: "İkizler Kağıt",
+    locale: "tr_TR",
+    type: "website",
+    images: [
+      {
+        url: "/assets/img/slider01.png",
+        width: 1100,
+        height: 733,
+        alt: "Hakkımızda",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hakkımızda",
+    description:
+      "1998'den bu yana geri dönüşüm ve atık yönetimi alanında hizmet veren İkizler Kağıt: tarihçemiz, vizyonumuz, misyonumuz, tesisimiz ve sertifikalarımız.",
+    images: ["/assets/img/slider01.png"],
+  },
 };
 
 export const revalidate = 3600;

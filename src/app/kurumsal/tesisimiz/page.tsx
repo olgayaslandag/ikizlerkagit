@@ -9,10 +9,34 @@ import { COMPANY } from "@/data/company";
 import { PROCESS_STEPS } from "@/data/process";
 
 export const metadata: Metadata = {
-  title: "Tesisimiz — İkizler Kağıt",
+  title: "Tesisimiz",
   description:
     "İkizler Kağıt modern geri dönüşüm tesisi: ayrıştırma bandı, presleme hattı, geçici depolama ve lisanslı geri kazanım ortaklıkları.",
   alternates: { canonical: "/kurumsal/tesisimiz/" },
+  openGraph: {
+    title: "Tesisimiz",
+    description:
+      "İkizler Kağıt modern geri dönüşüm tesisi: ayrıştırma bandı, presleme hattı, geçici depolama ve lisanslı geri kazanım ortaklıkları.",
+    url: "/kurumsal/tesisimiz/",
+    siteName: "İkizler Kağıt",
+    locale: "tr_TR",
+    type: "website",
+    images: [
+      {
+        url: "/assets/img/slider01.png",
+        width: 1100,
+        height: 733,
+        alt: "Tesisimiz",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tesisimiz",
+    description:
+      "İkizler Kağıt modern geri dönüşüm tesisi: ayrıştırma bandı, presleme hattı, geçici depolama ve lisanslı geri kazanım ortaklıkları.",
+    images: ["/assets/img/slider01.png"],
+  },
 };
 
 export const revalidate = 3600;

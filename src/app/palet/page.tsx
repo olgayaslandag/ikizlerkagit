@@ -15,7 +15,7 @@ import {
 } from "@/features/palet";
 
 export const metadata: Metadata = {
-  title: PALET.seo.title,
+  title: { absolute: PALET.seo.title },
   description: PALET.seo.description,
   keywords: PALET.seo.keywords,
   alternates: { canonical: "/palet/" },

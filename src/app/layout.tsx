@@ -14,7 +14,7 @@ const manrope = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ikizlerkagit.com.tr"),
-  title: "İkizler Kağıt | Dönüşüm Burada Başlar",
+  title: { default: "İkizler Kağıt | Dönüşüm Burada Başlar", template: "%s — İkizler Kağıt" },
   description: "İkizler Kağıt geri dönüşüm ve atık yönetimi çözümleri.",
   alternates: { canonical: "/" },
   icons: {
@@ -27,13 +27,14 @@ export const metadata: Metadata = {
     siteName: "İkizler Kağıt",
     locale: "tr_TR",
     type: "website",
-    images: [{ url: "/assets/img/hero/hero01.webp", width: 1600, height: 900, alt: "İkizler Kağıt" }],
+    images: [{ url: "/assets/img/hero/hero02.webp", width: 1600, height: 900, alt: "İkizler Kağıt" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "İkizler Kağıt | Dönüşüm Burada Başlar",
     description: "İkizler Kağıt geri dönüşüm ve atık yönetimi çözümleri.",
-    images: ["/assets/img/hero/hero01.webp"],
+    images: ["/assets/img/hero/hero02.webp"],
+    site: "@ikizlerkagit",
   },
 };
 
