@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function PaletteSection() {
   return (
     <section className="palette-banner reveal" id="palet">
@@ -16,18 +18,14 @@ export default function PaletteSection() {
             <br />
             değer katıyoruz.
           </p>
-          <a className="button button-outline-light" href="#iletisim">
+          <Link className="button button-outline-light" href="/hizmetler/palet-hizmeti/">
             Palet Ürünlerini İncele <i className="bi bi-arrow-right" />
-          </a>
+          </Link>
         </div>
         <div className="banner-note reveal">
-          DAHA FAZLA
+          DAHA FAZLA KULLAN
           <br />
-          KULLAN
-          <br />
-          DAHA AZ
-          <br />
-          TÜKET.
+          DAHA AZ TÜKET.
           <span />
         </div>
       </div>

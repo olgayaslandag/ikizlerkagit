@@ -1,0 +1,202 @@
+{
+  "services": [
+    {
+      "slug": "ambalaj-toplama",
+      "title": "Ambalaj Atığı Toplama",
+      "description": "Kağıt, karton, plastik, metal, cam ve diğer ambalaj atıklarını kaynağında topluyoruz.",
+      "image": "/assets/img/services/ambalaj-toplama.webp",
+      "alt": "Ambalaj Atığı Toplama",
+      "summary": "Ambalaj atığı toplama ve toplama işlemi",
+      "seo": {
+        "region": "İstanbul ve çevresi",
+        "certifications": [
+          "ISO 9001",
+          "ISO 14001"
+        ],
+        "highlights": [
+          "Üretimde geri dönüşüm",
+          "Personel eğitimi"
+        ]
+      }
+    },
+    {
+      "slug": "tehlikesiz-atik",
+      "title": "Geri Dönüştürülemeyen Tehlikesiz Atık Toplama",
+      "description": "İşletmelerde oluşan, geri dönüştürülemeyen ancak tehlikesiz nitelikteki atıkları topluyoruz.",
+      "image": "/assets/img/services/tehlikesiz-atik.webp",
+      "alt": "Güvenli Tehlikesiz Atık Toplama",
+      "summary": "Tehlikesiz atıklar güvenli şekilde toplama ve taşıma ile sunulur.",
+      "seo": {
+        "region": "İstanbul ve çevresi",
+        "certifications": [
+          "ISO 9001",
+          "ISO 14001"
+        ],
+        "highlights": [
+          "Endüstriyel atıklar",
+          "Yuvarlak ekonomi stratejisi"
+        ]
+      }
+    },
+    {
+      "slug": "ayristirma-presleme",
+      "title": "Atık Kodlarına Göre Ayrıştırma ve Presleme",
+      "description": "Toplanan atıklar, ayrıştırma bandında personelimiz tarafından cinsine ve atık koduna göre ayrılarak ilgili kod bölmelerine yönlendirilir. Ayrıştırılan atıklar iş ekipmanı aracılığıyla presleme alanına taşınır ve preslenerek geri dönüşüme hazır hale getirilir.",
+      "image": "/assets/img/services/ayristirma-presleme.webp",
+      "alt": "Atıklar Modern Tesisimizde Türlerine Göre Ayrıştırma ve Presleme",
+      "summary": "Atıklar türlerine göre ayrıştırma ve presleme işlemi yapılır.",
+      "seo": {
+        "region": "İstanbul ve çevresi",
+        "certifications": [
+          "ISO 9001",
+          "ISO 14001"
+        ],
+        "highlights": [
+          "Sekanslı üretim",
+          "Akıllı sınıflama sistemi"
+        ]
+      }
+    },
+    {
+      "slug": "evrak-imha",
+      "title": "Güvenli Evrak ve Arşiv İmha",
+      "description": "Gizli belge ve arşivleriniz, güvenle imha edilerek geri dönüşüme kazandırılır.",
+      "image": "/assets/img/services/evrak-imha.webp",
+      "alt": "Güvenli Evrak ve Arşiv İmha",
+      "summary": "Gizli belgeler ve arşivleriniz güvenle imha edilir.",
+      "seo": {
+        "region": "İstanbul ve çevresi",
+        "certifications": [
+          "ISO 9001",
+          "ISO 14001"
+        ],
+        "highlights": [
+          "İç güvenlik protokolleri",
+          "Yasal uyumluluk"
+        ]
+      }
+    },
+    {
+      "slug": "depolama-planlama",
+      "title": "Atık Tonajına Göre Depolama Alanı Planlaması",
+      "description": "İşletmenizin atık tonajını değerlendirir; tonajı yüksek atıklar için konteyner kasa, tonajı düşük atıklar için kafes sistemi esas alarak depolama alanınızı planlıyoruz.",
+      "image": "/assets/img/services/depolama-planlama.webp",
+      "alt": "Atık Tonajına Göre Depolama Alanı Planlaması",
+      "summary": "Atık tonajına göre depolama alanınız planlanır.",
+      "seo": {
+        "region": "İstanbul ve çevresi",
+        "certifications": [
+          "ISO 9001",
+          "ISO 14001"
+        ],
+        "highlights": [
+          "HACCP uyumlu",
+          "Esnek konteyner sistemi"
+        ]
+      }
+    },
+    {
+      "slug": "kod-levhasi",
+      "title": "Atık Kod Levhası Temini",
+      "description": "Müşteri talebine uygun atık kod levhaları temin edilir ve konteyner kasa içine yerleştirilir.",
+      "image": "/assets/img/services/kod-levhasi.webp",
+      "alt": "Atık Kod Levhası Temini",
+      "summary": "Atık kod levhaları konteyner kasa içine yerleştirilir.",
+      "seo": {
+        "region": "İstanbul ve çevresi",
+        "certifications": [
+          "ISO 9001",
+          "ISO 14001"
+        ],
+        "highlights": [
+          "Regülasyon uyumlu",
+          "Tek tip etiketleme"
+        ]
+      }
+    },
+    {
+      "slug": "talep-bazli-toplama",
+      "title": "Esnek ve Talep Bazlı Toplama",
+      "description": "Müşterinin belirlediği gün ve saatte araç yönlendirilerek atık alımı gerçekleştirilir; işletmelerin mağduriyeti önlenir.",
+      "image": "/assets/img/services/talep-bazli-toplama.webp",
+      "alt": "Atıklar Toplama Aracına Yüklenir",
+      "summary": "Atıklar talep bazlı olarak toplama ve taşıma ile güvenli şekilde taşınır.",
+      "seo": {
+        "region": "İstanbul ve çevresi",
+        "certifications": [
+          "ISO 9001",
+          "ISO 14001"
+        ],
+        "highlights": [
+          "7/24 esnek zamanlama",
+          "Hızlı teslimat"
+        ]
+      }
+    },
+    {
+      "slug": "yerinde-personel",
+      "title": "Yerinde Sürekli Personel Görevlendirmesi",
+      "description": "Atık tonajı yüksek olan işletmelerin bünyesinde, sürece özel sabit personel görevlendirilir; toplama ve ayrıştırma işlemleri kesintisiz şekilde yürütülür.",
+      "image": "/assets/img/services/yerinde-personel.webp",
+      "alt": "Yerinde Toplama ve Ayrıştırma",
+      "summary": "Atık tonajı yüksek işletmelerde sürece özel sabit personel görevlendirilir; işlemler kesintisiz yürütülür.",
+      "seo": {
+        "region": "İstanbul ve çevresi",
+        "certifications": [
+          "ISO 9001",
+          "ISO 14001"
+        ],
+        "highlights": [
+          "Süreç destekli personel",
+          "Doygunluk testleri"
+        ]
+      }
+    },
+    {
+      "slug": "palet-hizmeti",
+      "title": "Palet Alım, Satım, Onarım ve Revizyon Hizmeti",
+      "description": "Farklı ölçü ve özelliklerde ahşap paletlerin alım satım işlemlerini gerçekleştirmekteyiz. Mevcut paletler, müşteri taleplerine uygun olarak onarım ve revizyon işlemleriyle farklı ölçülere uyarlanabilmektedir. Isıl işlem gerektiren paletlerin işlemleri, ilgili izin ve yetkilendirmeler kapsamında, ısıl işlem belgesine sahip kuruluş aracılığıyla gerçekleştirilmektedir.",
+      "image": "/assets/img/services/palet-hizmeti.webp",
+      "alt": "Ahşap Paletler",
+      "summary": "Ahşap paletlerin alım satım işlemleri yapılır; mevcut paletler onarım ve revizyonla farklı ölçülere uyarlanır.",
+      "seo": {
+        "region": "İstanbul ve çevresi",
+        "certifications": [
+          "ISO 9001",
+          "ISO 14001"
+        ],
+        "highlights": [
+          "Endüstriyel ısıl işlem",
+          "Kaynak koruma teknolojisi"
+        ]
+      }
+    },
+    {
+      "slug": "geri-kazanim",
+      "title": "Lisanslı Geri Kazanım Firmaları ile Anlaşma ve Geri Kazanım Sürecinin Başlatılması",
+      "description": "Preslenen atıklar için lisanslı geri kazanım firmaları bulunur, firmalarla anlaşma sağlanır; yükleme ve tartım işlemleri gerçekleştirilerek geri kazanım süreci başlatılır.",
+      "image": "/assets/img/services/geri-kazanim.webp",
+      "alt": "Atıklarınızın Geri Kazanımı",
+      "summary": "Preslenen atıklar için lisanslı geri kazanım firmalarıyla anlaşma sağlanır; yükleme ve tartım işlemleriyle süreç başlatılır.",
+      "seo": {
+        "region": "İstanbul ve çevresi",
+        "certifications": [
+          "ISO 9001",
+          "ISO 14001"
+        ],
+        "highlights": [
+          "Çevrenin korunması",
+          "Yeni enerji kaynağı üretimi"
+        ]
+      }
+    }
+  ],
+  "featuredSlugs": [
+    "ambalaj-toplama",
+    "ayristirma-presleme",
+    "depolama-planlama",
+    "talep-bazli-toplama",
+    "palet-hizmeti",
+    "geri-kazanim"
+  ]
+}

@@ -1,10 +1,11 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 
 const HERO_IMAGES = [
-  "/assets/img/slider01.png",
-  "/assets/img/slider02.png",
+  "/assets/img/hero/hero01.webp",
+  "/assets/img/hero/hero02.webp",
 ];
 
 export default function HeroSection() {
@@ -29,8 +30,22 @@ export default function HeroSection() {
       apply();
     }, 6000);
 
-    return () => window.clearInterval(interval);
+    return () => {
+      window.clearInterval(interval);
+    };
   }, []);
+
+  const scrollToNext = () => {
+    const target = document.getElementById("kurumsal");
+    if (!target) return;
+
+    const raw = document.documentElement.style.getPropertyValue("--header-height");
+    const headerHeight = parseInt(raw, 10) || 60;
+    const offset = headerHeight * 2;
+
+    const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+    window.scrollTo({ top, behavior: "smooth" });
+  };
 
   return (
     <section className="hero position-relative" id="anasayfa" ref={heroRef}>
@@ -51,9 +66,9 @@ export default function HeroSection() {
             <br />
             daha temiz bir gelecek için çalışıyoruz.
           </p>
-          <a href="#hizmetler" className="circle-link" aria-label="Hizmetlerimizi keşfet">
+          <Link href="/hizmetler/" className="circle-link" aria-label="Hizmetlerimizi keşfet">
             <i className="bi bi-arrow-right" />
-          </a>
+          </Link>
           <span className="cta-label">Hizmetlerimizi Keşfet</span>
         </div>
       </div>
@@ -69,6 +84,12 @@ export default function HeroSection() {
         </span>
         <small>01　━━━━　03</small>
       </div>
+      <button
+        type="button"
+        className="scroll-indicator"
+        aria-label="Sayfayı aşağı kaydır"
+        onClick={scrollToNext}
+      />
     </section>
   );
 }

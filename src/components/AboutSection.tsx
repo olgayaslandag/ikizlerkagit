@@ -16,18 +16,18 @@ export default function AboutSection() {
               İkizler Kağıt, 1998 yılından bu yana geri dönüşüm sektöründe edindiği deneyim ile güçlü
               altyapısıyla, atıkları ekonomiye kazandırıyor, daha temiz bir çevre için çalışıyor.
             </p>
-            <a href="#iletisim" className="outline-link">
+            <a href="/kurumsal/" className="outline-link">
               Hakkımızda <i className="bi bi-arrow-right" />
             </a>
           </div>
           <div className="col-lg-5">
-<Image
-                className="about-image reveal"
-                src="/assets/img/slider01.png"
-                alt="İkizler Kağıt geri dönüşüm tesisi"
-                width={1100}
-                height={733}
-              />
+            <Image
+              className="about-image reveal"
+              src="/assets/img/slider01.png"
+              alt="İkizler Kağıt geri dönüşüm tesisi"
+              width={1100}
+              height={733}
+            />
           </div>
           <div className="col-lg-3 stats reveal">
             <div className="stats-inner">

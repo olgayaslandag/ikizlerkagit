@@ -1,66 +1,50 @@
 import Image from "next/image";
+import Link from "next/link";
 
-const SERVICES = [
-  {
-    image:
-      "https://images.unsplash.com/photo-1756628920837-8d603a9ddded?auto=format&fit=crop&w=700&q=85",
-    alt: "Karton ve ambalaj atık toplama",
-    title: "Ambalaj Atığı Toplama",
-    text: "Kağıt, karton, plastik, metal, cam ve diğer ambalaj atıklarını kaynağında topluyoruz.",
-  },
-  {
-    image: "https://images.unsplash.com/photo-1725677187724-a492e46cd672?auto=format&fit=crop&w=700&q=85",
-    alt: "Güvenli evrak ve arşiv imha işlemi",
-    title: "Güvenli Evrak ve Arşiv İmha",
-    text: "Gizli belge ve arşivlerinizi güvenle imha ediyor, doğaya kazandırıyoruz.",
-  },
-  {
-    image: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=700&q=85",
-    alt: "Geri dönüşüm tesisimizde ayrıştırma prosesi",
-    title: "Kurumsal Atık Yönetimi",
-    text: "Belediyeler, kamu kurumları ve işletmeler için özel çözümler sunuyoruz.",
-  },
-  {
-    image: "https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=700&q=85",
-    alt: "Çevre danışmanlığı ve sürdürülebilirlik",
-    title: "Çevre Danışmanlığı",
-    text: "Sıfır atık, belgelendirme ve eğitim süreçlerinizde yanınızdayız.",
-  },
-];
+import type { Service } from "@/lib/api-types";
 
-export default function ServicesSection() {
+interface ServicesSectionProps {
+  services: Service[];
+  featuredSlugs: string[];
+}
+
+export default function ServicesSection({ services, featuredSlugs }: ServicesSectionProps) {
+  const FEATURED_SERVICES: Service[] = featuredSlugs
+    .map((slug) => services.find((service) => service.slug === slug))
+    .filter((service): service is Service => service !== undefined);
   return (
     <section className="services section-space reveal" id="hizmetler">
       <div className="container">
         <div className="section-heading d-flex justify-content-between align-items-end">
           <div>
-             <p className="eyebrow green">HİZMETLERİMİZ</p>
+            <p className="eyebrow green">HİZMETLERİMİZ</p>
             <h2>
               Değeri olan her atık,
               <br />
               doğru yere ulaşır.
             </h2>
           </div>
-          <a className="text-link" href="#iletisim">
+          <Link className="text-link" href="/hizmetler/">
             Tüm Hizmetler <i className="bi bi-arrow-right" />
-          </a>
+          </Link>
         </div>
         <div className="row mt-3 g-3">
-          {SERVICES.map((service) => (
-            <article className="col-6 col-sm-6 col-lg-3 service-card reveal" key={service.title}>
+          {FEATURED_SERVICES.map((service) => (
+            <article className="col-6 col-lg-4 service-card reveal" key={service.slug}>
               <div className="card-inner">
                 <Image
                   src={service.image}
                   alt={service.alt}
-                  width={700}
-                  height={700}
+                  width={1600}
+                  height={900}
+                  sizes="(max-width: 991px) 50vw, 33vw"
                 />
                 <div className="card-body">
                   <h3>{service.title}</h3>
-                  <p>{service.text}</p>
-                  <a href="#iletisim">
+                  <p>{service.summary ?? service.description}</p>
+                  <Link href={`/hizmetler/${service.slug}/`}>
                     Detaylı Bilgi <i className="bi bi-arrow-right" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </article>

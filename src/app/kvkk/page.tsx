@@ -1,10 +1,23 @@
-import SiteHeader from "@/components/SiteHeader";
-import Footer from "@/components/Footer";
+import type { Metadata } from "next";
+
+import SiteHeaderContainer from "@/components/SiteHeaderContainer";
+import FooterContainer from "@/components/FooterContainer";
+
+export const metadata: Metadata = {
+  title: "KVKK Aydınlatma Metni — İkizler Kağıt",
+  description:
+    "İkizler Kağıt'in KVKK aydınlatma metni: toplanan kişisel veriler, işleme amaçları, paylaşım koşulları, veri güvenliği önlemleri, haklarınız ve çerez politikası.",
+  alternates: {
+    canonical: "/kvkk/",
+  },
+};
+
+export const revalidate = 3600;
 
 export default function KvkkPage() {
   return (
     <>
-      <SiteHeader />
+      <SiteHeaderContainer />
       <main>
         <section className="kvkk-section section-space" id="kvkk">
           <div className="container">
@@ -42,7 +55,7 @@ export default function KvkkPage() {
 
               <h2>6. Çerez Politikası</h2>
               <p>
-                Web sitemizde kullanıcı deneyimini iyileştirmek amacıyla çerezler kullanılmaktadır. Çerez tercihlerinizi tarayıcı ayarlarınızdan yönetebilirsiniz.
+                Web sitemizde kullanıcı deneyimini iyileştirmek amacıyla çerez kullanılmamaktadır; yalnızca temel oturum çerezleri (varsa) tarayıcınızda saklanır. Çerez tercihlerinizi tarayıcı ayarlarınızdan yönetebilirsiniz.
               </p>
 
               <h2>7. İletişim</h2>
@@ -53,7 +66,7 @@ export default function KvkkPage() {
           </div>
         </section>
       </main>
-      <Footer />
+      <FooterContainer />
     </>
   );
 }

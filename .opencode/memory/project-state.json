@@ -1,0 +1,42 @@
+{
+  "project": "bialine",
+  "status": "initialized",
+  "phase": "plan",
+  "source": "bialine.pdf",
+  "model": "web-agency",
+  "agents": [
+    "account-manager-agent",
+    "project-manager-agent",
+    "build-agent",
+    "technical-architect-agent",
+    "visual-analyst-agent",
+    "ux-ui-designer-agent",
+    "content-copywriter-agent",
+    "seo-specialist-agent",
+    "image-researcher-agent",
+    "image-generator-agent",
+    "frontend-coder-agent",
+    "backend-api-agent",
+    "code-cleaner-agent",
+    "performance-agent",
+    "qa-tester-agent",
+    "devops-deployment-agent"
+  ],
+  "workflows": [
+    "plan-workflow",
+    "design-workflow",
+    "content-workflow",
+    "seo-workflow",
+    "build-workflow",
+    "deploy-workflow"
+  ],
+  "rules": [
+    "coding-standards",
+    "design-rules",
+    "content-rules",
+    "image-rules",
+    "analysis-rules",
+    "deploy-rules"
+  ],
+  "lastUpdated": "2026-10-25"
+}
