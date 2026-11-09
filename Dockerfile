@@ -20,7 +20,7 @@ RUN npm run build
 FROM node:22-alpine AS runner
 WORKDIR /app
 ENV NODE_ENV=production
-ENV PORT=3003
+ENV PORT=3004
 ENV HOSTNAME=0.0.0.0
 ENV NEXT_TELEMETRY_DISABLED=1
 
@@ -44,5 +44,5 @@ COPY --from=deps --chown=nextjs:nodejs /app/node_modules/detect-libc ./node_modu
 COPY --from=deps --chown=nextjs:nodejs /app/node_modules/semver ./node_modules/semver
 
 USER nextjs
-EXPOSE 3003
+EXPOSE 3004
 CMD ["node", "server.js"]

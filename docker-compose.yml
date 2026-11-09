@@ -6,16 +6,16 @@ services:
     image: ikizler:latest
     container_name: ikizler
     ports:
-      - "3003:3003"
+      - "3004:3004"
     environment:
       NODE_ENV: production
-      PORT: "3003"
+      PORT: "3004"
       HOSTNAME: "0.0.0.0"
-      API_BASE_URL: "http://127.0.0.1:3003"
+      API_BASE_URL: "http://127.0.0.1:3004"
       REVALIDATE_SECRET: "${REVALIDATE_SECRET:-change-me-in-production}"
     restart: unless-stopped
     healthcheck:
-      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:3003/ >/dev/null 2>&1 || exit 1"]
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:3004/ >/dev/null 2>&1 || exit 1"]
       interval: 30s
       timeout: 10s
       retries: 3
