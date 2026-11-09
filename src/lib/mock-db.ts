@@ -52,3 +52,32 @@ export function getServiceWithContent(
   if (!service) return null;
   return { service, content: SERVICE_CONTENTS[slug] ?? null };
 }
+
+export interface ContactMessage {
+  id: string;
+  ad: string;
+  eposta: string;
+  mesaj: string;
+  receivedAt: string;
+  ip?: string;
+}
+
+const contactMessages: ContactMessage[] = [];
+
+export function addContactMessage(input: Omit<ContactMessage, "id" | "receivedAt">): ContactMessage {
+  const msg: ContactMessage = {
+    id: `msg-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+    ad: input.ad,
+    eposta: input.eposta,
+    mesaj: input.mesaj,
+    receivedAt: new Date().toISOString(),
+    ip: input.ip,
+  };
+  contactMessages.push(msg);
+  console.log("[contact] new message:", msg.id, msg.ad, msg.eposta);
+  return msg;
+}
+
+export function listContactMessages(): ContactMessage[] {
+  return [...contactMessages];
+}

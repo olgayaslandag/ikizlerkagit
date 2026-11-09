@@ -43,32 +43,38 @@ export default function PaletHero() {
 
           <div className="col-lg-4">
             <div className="palet-hero-media reveal">
-              <Image
-                className="palet-hero-media-main"
-                src="/assets/img/palet/palet-hero.webp"
-                alt="İkizler Palet tesisi — açık saha ve palet yığınları"
-                width={1600}
-                height={1000}
-                sizes="(max-width: 991px) 100vw, 33vw"
-                priority
-              />
+              <a href="/assets/img/palet/palet-hero.webp" data-lightbox data-lightbox-group="palet-hero" data-lightbox-alt="İkizler Palet tesisi — açık saha ve palet yığınları" className="lightbox-trigger">
+                <Image
+                  className="palet-hero-media-main"
+                  src="/assets/img/palet/palet-hero.webp"
+                  alt="İkizler Palet tesisi — açık saha ve palet yığınları"
+                  width={1600}
+                  height={1000}
+                  sizes="(max-width: 991px) 100vw, 33vw"
+                  priority
+                />
+              </a>
               <div className="palet-hero-media-grid">
-                <Image
-                  src="/assets/img/palet/palet-hero-2.webp"
-                  alt="İkizler Palet tesisi — konteyner ve palet sahası"
-                  width={800}
-                  height={600}
-                  sizes="(max-width: 991px) 50vw, 16vw"
-                  loading="lazy"
-                />
-                <Image
-                  src="/assets/img/palet/palet-hero-3.webp"
-                  alt="İkizler Palet tesisi — geniş saha panoraması"
-                  width={800}
-                  height={600}
-                  sizes="(max-width: 991px) 50vw, 16vw"
-                  loading="lazy"
-                />
+                <a href="/assets/img/palet/palet-hero-2.webp" data-lightbox data-lightbox-group="palet-hero" data-lightbox-alt="İkizler Palet tesisi — konteyner ve palet sahası" className="lightbox-trigger">
+                  <Image
+                    src="/assets/img/palet/palet-hero-2.webp"
+                    alt="İkizler Palet tesisi — konteyner ve palet sahası"
+                    width={800}
+                    height={600}
+                    sizes="(max-width: 991px) 50vw, 16vw"
+                    loading="lazy"
+                  />
+                </a>
+                <a href="/assets/img/palet/palet-hero-3.webp" data-lightbox data-lightbox-group="palet-hero" data-lightbox-alt="İkizler Palet tesisi — geniş saha panoraması" className="lightbox-trigger">
+                  <Image
+                    src="/assets/img/palet/palet-hero-3.webp"
+                    alt="İkizler Palet tesisi — geniş saha panoraması"
+                    width={800}
+                    height={600}
+                    sizes="(max-width: 991px) 50vw, 16vw"
+                    loading="lazy"
+                  />
+                </a>
               </div>
             </div>
           </div>

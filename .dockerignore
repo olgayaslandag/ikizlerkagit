@@ -1,0 +1,15 @@
+node_modules
+.next
+.git
+.env
+.env.*
+!.env.example
+memory
+plans
+modified
+*.log
+*.tsbuildinfo
+.DS_Store
+image.png
+hizmetler.rtf
+npm-debug.log*

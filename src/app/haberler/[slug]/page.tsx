@@ -7,6 +7,7 @@ import SiteHeaderContainer from "@/components/SiteHeaderContainer";
 import FooterContainer from "@/components/FooterContainer";
 import ScrollReveal from "@/components/ScrollReveal";
 import NewsGallery from "@/components/NewsGallery";
+import NewsSidebar from "@/components/NewsSidebar";
 import { getNewsItem, getNewsList } from "@/lib/api";
 import type { NewsCategory } from "@/lib/api-types";
 
@@ -106,8 +107,9 @@ export default async function NewsDetailPage({
   const paragraphs = content?.paragraphs ?? [];
   const images = content?.images ?? [];
 
-  // Diğer haberler (mevcut haberin hariç tutulduğu ilk 3 kayıt)
-  const related = (await getNewsList()).filter((n) => n.slug !== slug).slice(0, 3);
+  // Tüm haber listesi (sidebar + ilgili gelişmeler için tek çağrı)
+  const allNews = await getNewsList();
+  const related = allNews.filter((n) => n.slug !== slug).slice(0, 3);
 
   // JSON-LD NewsArticle Schema
   const newsSchema = {
@@ -164,10 +166,20 @@ export default async function NewsDetailPage({
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb">
                 <li className="breadcrumb-item">
-                  <Link href="/">Anasayfa</Link>
+                  <Link
+                    href="/"
+                    className="text-green text-decoration-none small fw-semibold"
+                  >
+                    Anasayfa
+                  </Link>
                 </li>
                 <li className="breadcrumb-item">
-                  <Link href="/haberler/">Haberler</Link>
+                  <Link
+                    href="/haberler/"
+                    className="text-green text-decoration-none small fw-semibold"
+                  >
+                    Haberler
+                  </Link>
                 </li>
                 <li
                   className="breadcrumb-item active"
@@ -188,30 +200,39 @@ export default async function NewsDetailPage({
 
         <section className="section-space reveal" style={{ paddingTop: 0 }}>
           <div className="container">
-            <div className="news-detail-cover">
-              <Image
-                src={item.image}
-                alt={item.alt}
-                width={1600}
-                height={900}
-                sizes="(max-width: 991px) 100vw, 1100px"
-                priority
-              />
-            </div>
+            <div className="row g-4 g-lg-5">
+              <div className="col-lg-8">
+                <a href={item.image} data-lightbox data-lightbox-group={`news-${slug}`} data-lightbox-alt={item.alt} data-lightbox-caption={item.title} className="lightbox-trigger news-detail-cover-link">
+                  <div className="news-detail-cover">
+                    <Image
+                      src={item.image}
+                      alt={item.alt}
+                      width={1600}
+                      height={900}
+                      sizes="(max-width: 991px) 100vw, 750px"
+                      priority
+                    />
+                  </div>
+                </a>
 
-            <div className="news-detail-body">
-              {paragraphs.length > 0 ? (
-                paragraphs.map((p, index) => <p key={index}>{p}</p>)
-              ) : (
-                <p style={{ color: "var(--muted)" }}>
-                  Bu haberin detay içeriği yakında eklenecektir.
-                </p>
-              )}
-            </div>
+                <div className="news-detail-body">
+                  {paragraphs.length > 0 ? (
+                    paragraphs.map((p, index) => <p key={index}>{p}</p>)
+                  ) : (
+                    <p style={{ color: "var(--muted)" }}>
+                      Bu haberin detay içeriği yakında eklenecektir.
+                    </p>
+                  )}
+                </div>
 
-            {images.length > 0 && (
-              <NewsGallery images={images} title={item.title} />
-            )}
+                {images.length > 0 && (
+                  <NewsGallery images={images} title={item.title} group={`news-${slug}`} />
+                )}
+              </div>
+              <div className="col-lg-4">
+                <NewsSidebar news={allNews} activeSlug={slug} />
+              </div>
+            </div>
           </div>
         </section>
 

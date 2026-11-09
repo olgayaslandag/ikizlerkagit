@@ -24,14 +24,16 @@ export default function PaletAbout() {
             </Link>
           </div>
           <div className="col-lg-5">
-            <Image
-              className="about-image reveal"
-              src="/assets/img/palet/palet-saha-genel.webp"
-              alt="İkizler Palet tesisi sahası"
-              width={1600}
-              height={1000}
-              sizes="(max-width: 991px) 100vw, 42vw"
-            />
+            <a href="/assets/img/palet/palet-saha-genel.webp" data-lightbox data-lightbox-group="palet-about" data-lightbox-alt="İkizler Palet tesisi sahası" className="lightbox-trigger">
+              <Image
+                className="about-image reveal"
+                src="/assets/img/palet/palet-saha-genel.webp"
+                alt="İkizler Palet tesisi sahası"
+                width={1600}
+                height={1000}
+                sizes="(max-width: 991px) 100vw, 42vw"
+              />
+            </a>
           </div>
           <div className="col-lg-3 stats reveal">
             <div className="stats-inner">

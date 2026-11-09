@@ -21,13 +21,15 @@ export default function AboutSection() {
             </a>
           </div>
           <div className="col-lg-5">
-            <Image
-              className="about-image reveal"
-              src="/assets/img/slider01.png"
-              alt="İkizler Kağıt geri dönüşüm tesisi"
-              width={1100}
-              height={733}
-            />
+            <a href="/assets/img/slider01.png" data-lightbox data-lightbox-group="home-about" data-lightbox-alt="İkizler Kağıt geri dönüşüm tesisi" className="lightbox-trigger">
+              <Image
+                className="about-image reveal"
+                src="/assets/img/slider01.png"
+                alt="İkizler Kağıt geri dönüşüm tesisi"
+                width={1100}
+                height={733}
+              />
+            </a>
           </div>
           <div className="col-lg-3 stats reveal">
             <div className="stats-inner">

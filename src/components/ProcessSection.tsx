@@ -31,13 +31,15 @@ export default function ProcessSection() {
                 <Fragment key={step.number}>
                   <div className="step reveal">
                     <b>{step.number}</b>
-                    <Image
-                      src={step.image}
-                      alt={step.alt}
-                      width={1600}
-                      height={900}
-                      className="step-image"
-                    />
+                    <a href={step.image} data-lightbox data-lightbox-group="home-surec" data-lightbox-alt={step.alt} data-lightbox-caption={step.title} className="lightbox-trigger">
+                      <Image
+                        src={step.image}
+                        alt={step.alt}
+                        width={1600}
+                        height={900}
+                        className="step-image"
+                      />
+                    </a>
                     <strong>{step.title}</strong>
                     <small>{step.text}</small>
                   </div>

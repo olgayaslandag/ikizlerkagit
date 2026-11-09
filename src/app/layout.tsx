@@ -5,6 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./globals.css";
 import Preloader from "@/components/Preloader";
+import Lightbox from "@/components/Lightbox";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const manrope = localFont({
   src: [{ path: "./fonts/manrope.woff2", weight: "200 800", style: "normal" }],
@@ -52,6 +54,8 @@ export default function RootLayout({
     <html lang="tr" className={manrope.variable}>
       <body>
         <Preloader />
+        <Lightbox />
+        <WhatsAppButton />
         {children}
       </body>
     </html>

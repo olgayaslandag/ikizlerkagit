@@ -22,27 +22,30 @@ export default function PaletTesis() {
           </div>
           <div className="col-lg-6">
             <div className="palet-gallery">
-              <Image
-                src={tesis.image}
-                alt={tesis.imageAlt}
-                width={1600}
-                height={1000}
-                sizes="(max-width: 991px) 100vw, 50vw"
-                className="palet-gallery-main reveal"
-                loading="lazy"
-              />
+              <a href={tesis.image} data-lightbox data-lightbox-group="palet-tesis" data-lightbox-alt={tesis.imageAlt} className="lightbox-trigger">
+                <Image
+                  src={tesis.image}
+                  alt={tesis.imageAlt}
+                  width={1600}
+                  height={1000}
+                  sizes="(max-width: 991px) 100vw, 50vw"
+                  className="palet-gallery-main reveal"
+                  loading="lazy"
+                />
+              </a>
               <div className="palet-gallery-thumbs">
                 {tesis.gallery.map((item) => (
-                  <Image
-                    key={item.src}
-                    src={item.src}
-                    alt={item.alt}
-                    width={1600}
-                    height={1000}
-                    sizes="(max-width: 991px) 33vw, 16vw"
-                    className="palet-gallery-thumb reveal"
-                    loading="lazy"
-                  />
+                  <a key={item.src} href={item.src} data-lightbox data-lightbox-group="palet-tesis" data-lightbox-alt={item.alt} className="lightbox-trigger">
+                    <Image
+                      src={item.src}
+                      alt={item.alt}
+                      width={1600}
+                      height={1000}
+                      sizes="(max-width: 991px) 33vw, 16vw"
+                      className="palet-gallery-thumb reveal"
+                      loading="lazy"
+                    />
+                  </a>
                 ))}
               </div>
             </div>

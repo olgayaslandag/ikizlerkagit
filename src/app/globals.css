@@ -2145,6 +2145,74 @@ footer a {
     cursor: pointer;
     font-family: inherit;
 }
+
+/* Sidebar (haber detay) */
+.news-sidebar {
+    position: sticky;
+    top: calc(var(--header-height) + 16px);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.news-sidebar-block {
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: var(--soft);
+    padding: 20px;
+}
+.news-sidebar-list {
+    list-style: none;
+    margin: 12px 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.news-sidebar-item { margin: 0; }
+.news-sidebar-card {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    text-decoration: none;
+    color: var(--ink);
+}
+.news-sidebar-thumb {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+    border: 1px solid var(--line);
+}
+.news-sidebar-body {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+.news-sidebar-body small {
+    color: var(--muted);
+    font-size: 12px;
+}
+.news-sidebar-title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.35;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.news-sidebar-card:hover .news-sidebar-title { color: var(--green-text); }
+.news-sidebar-cta h3 { font-size: 18px; margin: 8px 0 8px; }
+.news-sidebar-cta p { color: var(--muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px; }
+.news-sidebar-cta-actions { display: flex; flex-direction: column; gap: 10px; }
+.news-sidebar-phone { text-align: center; justify-content: center; }
+
+@media (max-width: 991px) {
+    .news-sidebar { position: static; top: auto; margin-top: 8px; }
+}
+
 @media (max-width: 575px) {
     .news-detail-cover {
         margin-bottom: 24px;
@@ -2153,5 +2221,168 @@ footer a {
     .news-gallery {
         grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
         gap: 10px;
+    }
+}
+
+.news-detail-cover-link { display: block; }
+
+/* ===== Lightbox (site genelinde) ===== */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: rgba(6, 45, 29, 0.92);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  animation: lightbox-fade 0.2s ease;
+}
+.lightbox-figure {
+  position: relative;
+  max-width: 92vw;
+  max-height: 84vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lightbox-image {
+  max-width: 92vw;
+  max-height: 84vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+.lightbox-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 2;
+  transition: background 0.2s;
+}
+.lightbox-close:hover { background: rgba(255,255,255,0.25); }
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 2;
+}
+.lightbox-nav:hover { background: rgba(255,255,255,0.25); }
+.lightbox-nav-prev { left: 16px; }
+.lightbox-nav-next { right: 16px; }
+.lightbox-meta {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 80vw;
+  z-index: 2;
+}
+.lightbox-counter { font-size: 13px; opacity: 0.8; }
+.lightbox-caption { font-size: 14px; line-height: 1.4; }
+.lightbox-trigger {
+  display: block;
+  cursor: zoom-in;
+  border: 0;
+  padding: 0;
+  background: none;
+  width: 100%;
+}
+@keyframes lightbox-fade { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  .lightbox-overlay { animation: none; }
+}
+@media (max-width: 575px) {
+  .lightbox-nav { width: 36px; height: 36px; font-size: 16px; }
+  .lightbox-close { width: 36px; height: 36px; font-size: 16px; }
+}
+
+/* ===== WhatsApp float (site genelinde) ===== */
+.whatsapp-float {
+    position: fixed;
+    right: 24px;
+    bottom: max(24px, env(safe-area-inset-bottom, 0px));
+    z-index: 100;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: var(--green);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-size: 28px;
+    line-height: 1;
+    text-decoration: none;
+    box-shadow:
+        0 6px 20px rgba(var(--green-rgb), 0.45),
+        0 0 18px rgba(var(--green-rgb), 0.35);
+    opacity: 0;
+    animation: whatsapp-fadeInUp 0.6s cubic-bezier(0.21, 1, 0.35, 1) 0.8s forwards;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+.whatsapp-float:hover,
+.whatsapp-float:focus-visible {
+    transform: translateY(-3px);
+    box-shadow:
+        0 10px 26px rgba(var(--green-rgb), 0.55),
+        0 0 24px rgba(var(--green-rgb), 0.45);
+    color: #fff;
+}
+@keyframes whatsapp-fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Hareket azaltma tercihi: buton animasyonsuz anında görünsün */
+@media (prefers-reduced-motion: reduce) {
+    .whatsapp-float {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+}
+/* Mobil: biraz daha küçük */
+@media (max-width: 575px) {
+    .whatsapp-float {
+        width: 52px;
+        height: 52px;
+        font-size: 25px;
+        right: 16px;
+        bottom: max(16px, env(safe-area-inset-bottom, 0px));
     }
 }

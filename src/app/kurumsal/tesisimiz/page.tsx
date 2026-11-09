@@ -61,13 +61,15 @@ export default function TesisimizPage() {
                 {text}
               </p>
             ))}
-            <Image
-              className="about-image reveal mt-4"
-              src="/assets/img/slider01.png"
-              alt="İkizler Kağıt geri dönüşüm tesisi"
-              width={1100}
-              height={733}
-            />
+            <a href="/assets/img/slider01.png" data-lightbox data-lightbox-group="tesis-hero" data-lightbox-alt="İkizler Kağıt geri dönüşüm tesisi" className="lightbox-trigger">
+              <Image
+                className="about-image reveal mt-4"
+                src="/assets/img/slider01.png"
+                alt="İkizler Kağıt geri dönüşüm tesisi"
+                width={1100}
+                height={733}
+              />
+            </a>
           </div>
         </section>
 
@@ -84,14 +86,16 @@ export default function TesisimizPage() {
                 <Fragment key={step.number}>
                   <div className="step reveal">
                     <b>{step.number}</b>
-                    <Image
-                      src={step.image}
-                      alt={step.alt}
-                      width={1600}
-                      height={900}
-                      className="step-image"
-                      sizes="(max-width: 991px) 35px, 135px"
-                    />
+                    <a href={step.image} data-lightbox data-lightbox-group="tesis-surec" data-lightbox-alt={step.alt} data-lightbox-caption={step.title} className="lightbox-trigger">
+                      <Image
+                        src={step.image}
+                        alt={step.alt}
+                        width={1600}
+                        height={900}
+                        className="step-image"
+                        sizes="(max-width: 991px) 35px, 135px"
+                      />
+                    </a>
                     <strong>{step.title}</strong>
                     <small>{step.text}</small>
                   </div>
@@ -136,13 +140,15 @@ export default function TesisimizPage() {
         >
           <div className="container">
             <p className="eyebrow green">TESİSİMİZDEN GÖRÜNTÜLER</p>
-            <Image
-              className="about-image reveal"
-              src="/assets/img/palet/palet-tesis-saha.webp"
-              alt="İkizler Kağıt tesis sahası"
-              width={1600}
-              height={900}
-            />
+            <a href="/assets/img/palet/palet-tesis-saha.webp" data-lightbox data-lightbox-group="tesis-saha" data-lightbox-alt="İkizler Kağıt tesis sahası" className="lightbox-trigger">
+              <Image
+                className="about-image reveal"
+                src="/assets/img/palet/palet-tesis-saha.webp"
+                alt="İkizler Kağıt tesis sahası"
+                width={1600}
+                height={900}
+              />
+            </a>
             <div className="row g-4 text-center mt-4">
               {tesis.tesisStats.map((stat) => (
                 <div className="col-md-4" key={stat.label}>

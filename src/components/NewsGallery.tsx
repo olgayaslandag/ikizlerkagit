@@ -7,6 +7,7 @@ interface NewsGalleryProps {
   images: string[];
   title: string;
   initialCount?: number;
+  group?: string;
 }
 
 /**
@@ -20,7 +21,9 @@ export default function NewsGallery({
   images,
   title,
   initialCount = 9,
+  group,
 }: NewsGalleryProps) {
+  const lightboxGroup = group || `news-${title}`;
   const [expanded, setExpanded] = useState(false);
 
   if (images.length === 0) {
@@ -40,8 +43,11 @@ export default function NewsGallery({
           <a
             key={src}
             href={src}
-            target="_blank"
-            rel="noopener"
+            data-lightbox
+            data-lightbox-group={lightboxGroup}
+            data-lightbox-alt={`${title} — fotoğraf ${index + 1}`}
+            data-lightbox-caption={`${title} — fotoğraf ${index + 1}`}
+            className="lightbox-trigger"
             aria-label={`${title} fotoğrafını büyüt (${index + 1})`}
           >
             <Image

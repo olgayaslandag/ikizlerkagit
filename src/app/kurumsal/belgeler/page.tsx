@@ -80,10 +80,18 @@ export default function BelgelerPage() {
                   <article className="document-card reveal h-100">
                     <a
                       href={doc.fileSrc}
-                      target="_blank"
-                      rel="noopener"
-                      className="document-card-media"
-                      aria-label={`${doc.title} belgesini yeni sekmede aç`}
+                      target={doc.fileType === "pdf" ? "_blank" : undefined}
+                      rel={doc.fileType === "pdf" ? "noopener" : undefined}
+                      className={doc.fileType === "image" ? "document-card-media lightbox-trigger" : "document-card-media"}
+                      aria-label={`${doc.title} belgesini ${doc.fileType === "pdf" ? "yeni sekmede aç" : "büyüt"}`}
+                      {...(doc.fileType === "image"
+                        ? {
+                            "data-lightbox": "",
+                            "data-lightbox-group": `belge-${doc.title}`,
+                            "data-lightbox-alt": `${doc.title} önizlemesi`,
+                            "data-lightbox-caption": doc.title,
+                          }
+                        : {})}
                     >
                       <Image
                         src={doc.previewSrc}

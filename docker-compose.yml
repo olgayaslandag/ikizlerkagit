@@ -1,0 +1,22 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ikizler:latest
+    container_name: ikizler
+    ports:
+      - "3003:3003"
+    environment:
+      NODE_ENV: production
+      PORT: "3003"
+      HOSTNAME: "0.0.0.0"
+      API_BASE_URL: "http://127.0.0.1:3003"
+      REVALIDATE_SECRET: "${REVALIDATE_SECRET:-change-me-in-production}"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:3003/ >/dev/null 2>&1 || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
