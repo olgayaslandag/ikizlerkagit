@@ -96,107 +96,10 @@
       ]
     }
   },
-  "tehlikesiz-atik": {
-    "slug": "tehlikesiz-atik",
-    "hero": {
-      "eyebrow": "HİZMET 02",
-      "lead": "İşletmelerde oluşan, geri dönüştürülemeyen ancak tehlikesiz nitelikteki atıkları güvenli koşullarda topluyor ve mevzuata uygun şekilde değerlendiriyoruz.",
-      "intro": [
-        "Her endüstriyel atık geri dönüştürülebilir değildir; ancak bu, tehlikesiz nitelikteki atıkların kontrolsüz bırakılabileceği anlamına gelmez. Geri dönüştürülemeyen tehlikesiz atıklar uygun kaplarda, etiketlenmiş ve sızdırmaz şekilde toplanmalı; lisanslı tesislere yönlendirilmelidir.",
-        "Bu hizmet özellikle üretim tesisleri, atölyeler ve depo sahaları için uygundur. Atıklarınız işletmenizde güvenli geçici depolama alanlarında biriktirilir, planlı toplama ile nakledilir.",
-        "Atıklarınız kontrollü koşullarda toplanır ve lisanslı tesislere yönlendirilir."
-      ],
-      "quickFacts": [
-        {
-          "label": "Kapsam",
-          "value": "Geri dönüştürülemeyen tehlikesiz atıklar"
-        },
-        {
-          "label": "Bölge",
-          "value": "İstanbul ve Tekirdağ"
-        },
-        {
-          "label": "Sertifikalar",
-          "value": "Çevre İzin ve Lisans Belgesi"
-        },
-        {
-          "label": "Taşıma",
-          "value": "Sızdırmaz, etiketli konteyner"
-        }
-      ]
-    },
-    "features": [
-      {
-        "title": "Güvenli Toplama",
-        "text": "Tehlikesiz atıklar sızdırmaz ve etiketli konteynerlerde, personelle temassız şekilde toplanır."
-      },
-      {
-        "title": "Kontrollü Süreç",
-        "text": "Toplama ve taşıma, atık türünüze uygun planla yürütülür."
-      },
-      {
-        "title": "Güvenli Depolama",
-        "text": "Toplanan atıklar değerlendirmeye kadar ayrı ve kontrollü alanlarda depolanır."
-      },
-      {
-        "title": "Personel Eğitimi",
-        "text": "Atıkların güvenli yönetimi konusunda işletme personelinize uygulamalı eğitim veriyoruz."
-      }
-    ],
-    "steps": [
-      {
-        "title": "Atık Sınıflandırması",
-        "text": "İşletmenizde oluşan atıkların tür, miktar ve tehlikesiz niteliği belirlenir."
-      },
-      {
-        "title": "Konteyner Yerleşimi",
-        "text": "Uygun konteyner kasa veya kafesler, atık kod levhalarıyla birlikte işletmenize teslim edilir."
-      },
-      {
-        "title": "Planlı Toplama ve Nakil",
-        "text": "Belirlenen takvimde atıklar toplanır ve lisanslı tesislere güvenli şekilde nakledilir."
-      },
-      {
-        "title": "Değerlendirme",
-        "text": "Atıklar uygun yöntemlerle değerlendirilir ve lisanslı tesislere sevk edilir."
-      }
-    ],
-    "faq": [
-      {
-        "q": "Tehlikesiz atık ile tehlikeli atık arasındaki fark nedir?",
-        "a": "Tehlikeli atıklar insan sağlığı ve çevre için zararlı özellik taşır; tehlikesiz atıklar bu özellikleri taşımaz ancak yine de kontrollü toplanmalı ve lisanslı tesislerde değerlendirilmelidir."
-      },
-      {
-        "q": "Atıklar işletmemde ne kadar süre bekleyebilir?",
-        "a": "Mevzuatta öngörülen geçici depolama sürelerine uygun planlama yapıyoruz; konteynerler dolmadan planlı toplama gerçekleştirilir."
-      },
-      {
-        "q": "Hangi belgeler düzenleniyor?",
-        "a": "Talep etmeniz halinde kaşeli/imzalı teslim yazısı düzenlenmektedir."
-      }
-    ],
-    "relatedSlugs": [
-      "ayristirma-presleme",
-      "depolama-planlama",
-      "kod-levhasi"
-    ],
-    "seo": {
-      "region": "İstanbul ve Tekirdağ",
-      "certifications": [
-        "Çevre İzin ve Lisans Belgesi"
-      ],
-      "highlights": [
-        "Sızdırmaz konteynerler",
-        "Yasal uyumluluk",
-        "Güvenli taşıma",
-        "Personel eğitimi"
-      ]
-    }
-  },
   "ayristirma-presleme": {
     "slug": "ayristirma-presleme",
     "hero": {
-      "eyebrow": "HİZMET 03",
+      "eyebrow": "HİZMET 02",
       "lead": "Toplanan atıklar tesisimizde türlerine ve atık kodlarına göre ayrıştırılıyor, preslenerek geri dönüşüme hazır hale getiriliyor.",
       "intro": [
         "Geri dönüşümün kalitesi ayrıştırma bandında başlar. Toplanan atıklar tesisimizde, eğitilmiş personel tarafından cinsine ve atık koduna göre ayrıştırılarak ilgili kod bölmelerine yönlendirilir.",
@@ -297,7 +200,7 @@
   "evrak-imha": {
     "slug": "evrak-imha",
     "hero": {
-      "eyebrow": "HİZMET 04",
+      "eyebrow": "HİZMET 03",
       "lead": "Gizli belge ve arşivlerinizi, KVKK ve ilgili mevzuata uygun güvenli yöntemlerle imha edip geri dönüşüme kazandırıyoruz.",
       "intro": [
         "Saklama süresi dolan gizli belgeler, arşiv kutuları ve hassas dokümanlar sıradan çöp akışına bırakılamaz. Bu içerikler veri sızıntısı riski taşır ve KVKK kapsamında yükümlülük oluşturur.",
@@ -399,7 +302,7 @@
   "depolama-planlama": {
     "slug": "depolama-planlama",
     "hero": {
-      "eyebrow": "HİZMET 05",
+      "eyebrow": "HİZMET 04",
       "lead": "İşletmenizin atık tonajını değerlendiriyor; yüksek tonajlı atıklar için konteyner kasa, düşük tonajlı atıklar için kafes sistemi esas alarak depolama alanınızı planlıyoruz.",
       "intro": [
         "Doğru depolama, atık yönetiminin görünmeyen ama en kritik halkasıdır. Yanlış seçilmiş kap veya düzensiz yerleşim; hijyen sorunlarına, iş güvenliği risklerine ve mevzuat ihlallerine yol açar.",
@@ -492,7 +395,7 @@
   "kod-levhasi": {
     "slug": "kod-levhasi",
     "hero": {
-      "eyebrow": "HİZMET 06",
+      "eyebrow": "HİZMET 05",
       "lead": "Atıklarınızın mevzuata uygun şekilde sınıflandırılabilmesi için, talep ettiğiniz atık kod levhalarını temin edip konteynerlerinize yerleştiriyoruz.",
       "intro": [
         "Atık yönetimi mevzuatı, her atık kabının üzerinde atık kodunu gösteren bir levha bulunmasını zorunlu kılar. Doğru kodlanmamış konteynerler denetimlerde ihlal sayılır ve atığın reddedilmesine yol açabilir.",
@@ -589,7 +492,7 @@
   "talep-bazli-toplama": {
     "slug": "talep-bazli-toplama",
     "hero": {
-      "eyebrow": "HİZMET 07",
+      "eyebrow": "HİZMET 06",
       "lead": "Belirlediğiniz gün ve saatte aracımızı yönlendirerek atık alımı yapıyoruz; üretim ritminiz bozulmadan atıklarınız zamanında uzaklaştırılır.",
       "intro": [
         "Sabit toplama takvimleri her işletmeye uymaz. Üretim atağı, sezonluk yoğunluk veya ani stok artışı gibi durumlarda atıkların beklemesi depo alanını işgal eder ve hijyen riski oluşturur.",
@@ -686,7 +589,7 @@
   "yerinde-personel": {
     "slug": "yerinde-personel",
     "hero": {
-      "eyebrow": "HİZMET 08",
+      "eyebrow": "HİZMET 07",
       "lead": "Atık tonajı yüksek işletmelerde sürece özel sabit personel görevlendiriyor; toplama ve ayrıştırma işlemlerini kesintisiz şekilde yürütüyoruz.",
       "intro": [
         "Yüksek hacimli atık üreten tesislerde, konteynerlerin dolmasını beklemek hem alan kaybına hem de düzensizliğe yol açar. Bu işletmelerde atık yönetiminin kesintisiz işlemesi gerekir.",
@@ -784,7 +687,7 @@
   "palet-hizmeti": {
     "slug": "palet-hizmeti",
     "hero": {
-      "eyebrow": "HİZMET 09",
+      "eyebrow": "HİZMET 08",
       "lead": "Farklı ölçü ve özelliklerde ahşap paletlerin alım ve satışını yapıyor; mevcut paletlerinizi onarım ve revizyonla taleplerinize uygun ölçülere dönüştürüyoruz.",
       "intro": [
         "Ahşap palet, lojistik ve depolama süreçlerinin temel taşıdır. Standart dışı ölçüler veya hasarlı paletler, sevkiyat güvenliğini ve depo verimliliğini doğrudan etkiler.",
@@ -881,11 +784,11 @@
   "geri-kazanim": {
     "slug": "geri-kazanim",
     "hero": {
-      "eyebrow": "HİZMET 10",
+      "eyebrow": "HİZMET 09",
       "lead": "Preslenen atıklarınız için lisanslı geri kazanım firmalarıyla anlaşma sağlıyor; yükleme ve tartım işlemlerinin ardından geri kazanım sürecini başlatıyoruz.",
       "intro": [
         "Geri kazanım, atığın çöp olmaktan çıkıp hammaddeye dönüştüğü aşamadır. Bu aşama ancak atık doğru ayrıştırılıp preslendikten sonra verimli şekilde işleyebilir.",
-        "Bu hizmette preslenen atıklarınız için mevzuata uygun, lisanslı geri kazanım firmalarını belirliyor ve anlaşma sağlıyoruz. Ardından yükleme ve tartım işlemleri yapılır; her sevkiyat tartı belgesiyle kayıt altına alınır.",
+        "Bu hizmette preslenen atıklarınız için mevzuata uygun, lisanslı geri kazanım firmalarını belirliyor ve anlaşma sağlıyoruz. Ardından yükleme ve tartım işlemleri yapılır; her sevkiyat tartı belgesiyle kayıt altına alınır. Geri kazanım lisansına sahip tesislerle çalıştığımız için sevkiyat şehirle sınırlı değildir; nakliye organizasyonu tarafımızca planlanır ve 81 ilin tamamında çözüm üretilir.",
         "Sürecin sonunda atıklar yeni ürünlere dönüştürülür; böylece doğal kaynaklar korunur ve döngüsel ekonomiye katkı somut hale gelir."
       ],
       "quickFacts": [
@@ -895,7 +798,7 @@
         },
         {
           "label": "Bölge",
-          "value": "İstanbul ve Tekirdağ"
+          "value": "Tüm Türkiye · 81 İl"
         },
         {
           "label": "Sertifikalar",
@@ -963,7 +866,7 @@
       "ambalaj-toplama"
     ],
     "seo": {
-      "region": "İstanbul ve Tekirdağ",
+      "region": "Tüm Türkiye",
       "certifications": [
         "Çevre İzin ve Lisans Belgesi",
         "Geri Kazanım İzni"
@@ -972,7 +875,8 @@
         "Çevrenin korunması",
         "Yeni enerji kaynağı üretimi",
         "Lisanslı firma anlaşması",
-        "Yükleme ve tartım"
+        "Yükleme ve tartım",
+        "Tüm Türkiye'den geri kazanım"
       ]
     }
   }

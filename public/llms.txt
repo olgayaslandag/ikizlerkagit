@@ -15,7 +15,6 @@
 ## Hizmetler
 
 - Ambalaj Toplama
-- Tehlikesiz Atık
 - Ayrıştırma & Presleme
 - Evrak İmha
 - Depolama Planlama

@@ -11,7 +11,6 @@ import type { Service } from "@/lib/api-types";
 // Eşleşme yoksa tam başlık (service.title) kullanılır.
 const SERVICE_SHORT_LABELS: Record<string, string> = {
   "ambalaj-toplama": "Ambalaj Atığı Toplama",
-  "tehlikesiz-atik": "Tehlikesiz Atık Toplama",
   "ayristirma-presleme": "Ayrıştırma ve Presleme",
   "evrak-imha": "Evrak ve Arşiv İmha",
   "depolama-planlama": "Depolama Alanı Planlaması",

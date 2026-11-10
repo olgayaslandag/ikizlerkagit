@@ -19,24 +19,6 @@
       }
     },
     {
-      "slug": "tehlikesiz-atik",
-      "title": "Geri Dönüştürülemeyen Tehlikesiz Atık Toplama",
-      "description": "İşletmelerde oluşan, geri dönüştürülemeyen ancak tehlikesiz nitelikteki atıkları topluyoruz.",
-      "image": "/assets/img/services/tehlikesiz-atik.webp",
-      "alt": "Güvenli Tehlikesiz Atık Toplama",
-      "summary": "Tehlikesiz atıklar güvenli şekilde toplama ve taşıma ile sunulur.",
-      "seo": {
-        "region": "İstanbul ve Tekirdağ",
-        "certifications": [
-          "Çevre İzin ve Lisans Belgesi"
-        ],
-        "highlights": [
-          "Endüstriyel atıklar",
-          "Yuvarlak ekonomi stratejisi"
-        ]
-      }
-    },
-    {
       "slug": "ayristirma-presleme",
       "title": "Atık Kodlarına Göre Ayrıştırma ve Presleme",
       "description": "Toplanan atıklar, ayrıştırma bandında personelimiz tarafından cinsine ve atık koduna göre ayrılarak ilgili kod bölmelerine yönlendirilir. Ayrıştırılan atıklar iş ekipmanı aracılığıyla presleme alanına taşınır ve preslenerek geri dönüşüme hazır hale getirilir.",
@@ -170,7 +152,7 @@
       "alt": "Atıklarınızın Geri Kazanımı",
       "summary": "Preslenen atıklar için lisanslı geri kazanım firmalarıyla anlaşma sağlanır; yükleme ve tartım işlemleriyle süreç başlatılır.",
       "seo": {
-        "region": "İstanbul ve Tekirdağ",
+        "region": "Tüm Türkiye",
         "certifications": [
           "Çevre İzin ve Lisans Belgesi"
         ],

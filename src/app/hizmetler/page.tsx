@@ -10,14 +10,14 @@ import { getServicesList } from "@/lib/api";
 export const metadata: Metadata = {
   title: "Hizmetlerimiz",
   description:
-    "İkizler Kağıt'in 10 hizmeti: atık toplama, ayrıştırma ve presleme, güvenli evrak imha, depolama planlaması, kod levhası, yerinde personel, palet hizmeti ve lisanslı geri kazanım.",
+    "İkizler Kağıt'in 9 hizmeti: atık toplama, ayrıştırma ve presleme, güvenli evrak imha, depolama planlaması, kod levhası, yerinde personel, palet hizmeti ve lisanslı geri kazanım.",
   alternates: {
     canonical: "/hizmetler/",
   },
   openGraph: {
     title: "Hizmetlerimiz",
     description:
-      "İkizler Kağıt'in 10 hizmeti: atık toplama, ayrıştırma ve presleme, güvenli evrak imha, depolama planlaması, kod levhası, yerinde personel, palet hizmeti ve lisanslı geri kazanım.",
+      "İkizler Kağıt'in 9 hizmeti: atık toplama, ayrıştırma ve presleme, güvenli evrak imha, depolama planlaması, kod levhası, yerinde personel, palet hizmeti ve lisanslı geri kazanım.",
     url: "/hizmetler/",
     siteName: "İkizler Kağıt",
     locale: "tr_TR",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Hizmetlerimiz",
     description:
-      "İkizler Kağıt'in 10 hizmeti: atık toplama, ayrıştırma ve presleme, güvenli evrak imha, depolama planlaması, kod levhası, yerinde personel, palet hizmeti ve lisanslı geri kazanım.",
+      "İkizler Kağıt'in 9 hizmeti: atık toplama, ayrıştırma ve presleme, güvenli evrak imha, depolama planlaması, kod levhası, yerinde personel, palet hizmeti ve lisanslı geri kazanım.",
     images: ["/assets/img/services/ambalaj-toplama.webp"],
   },
 };
@@ -60,7 +60,7 @@ export default async function ServicesPage() {
             </h1>
             <p className="services-page-lead">
               Kaynağında toplamadan ayrıştırmaya, preslemeden lisanslı geri kazanıma kadar;
-              işletmenizin atık yönetimi için yürüttüğümüz 10 hizmeti tek çatı altında topladık.
+              işletmenizin atık yönetimi için yürüttüğümüz 9 hizmeti tek çatı altında topladık.
             </p>
           </div>
         </section>

@@ -55,6 +55,10 @@ const nextConfig = {
       { source: "/tesisimize-ziyaret-edildi", destination: "/haberler/tesisimize-ziyaret-edildi/", permanent: true },
       { source: "/duyuru-baslik-3.html", destination: "/haberler/duyuru-baslik-3/", permanent: true },
       { source: "/duyuru-baslik-3", destination: "/haberler/duyuru-baslik-3/", permanent: true },
+
+      // Kaldırılan hizmet: tehlikesiz atık toplama (301 → hizmet listesi)
+      { source: "/hizmetler/tehlikesiz-atik/", destination: "/hizmetler/", permanent: true },
+      { source: "/hizmetler/tehlikesiz-atik", destination: "/hizmetler/", permanent: true },
     ];
   },
   // Next 15 dev cross-origin uyarısı: lokal ağdan erişim kaynaklarına izin ver.

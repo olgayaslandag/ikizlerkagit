@@ -9,7 +9,7 @@
 
 ## Build Information
 - Total static pages: 46
-- Sitemap URLs: 41 (11 statik + 20 haber + 10 hizmet)
+- Sitemap URLs: 40 (11 statik + 20 haber + 9 hizmet)
 - Haber URLs: 20 + 1 liste = 21
 - Robots.txt: Served correctly with Sitemap directive
 

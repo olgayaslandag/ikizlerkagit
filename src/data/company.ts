@@ -108,7 +108,7 @@ export const COMPANY = {
       {
         title: "Sanayi Kuruluşları",
         description:
-          "Fabrika ve üretim tesislerinin endüstriyel atıklarını yasal mevzuata uygun şekilde topluyor, ayrıştırıyor ve geri kazanıma hazırlıyoruz. Atık maliyetlerini düşürürken çevresel performansı artıran çözümler sunuyoruz.",
+          "Fabrika ve üretim tesislerinin kağıt, karton ve ambalaj atıklarını yasal mevzuata uygun şekilde topluyor, ayrıştırıyor ve geri kazanıma hazırlıyoruz. Atık maliyetlerini düşürürken çevresel performansı artıran çözümler sunuyoruz.",
       },
     ],
     partnersCta:
