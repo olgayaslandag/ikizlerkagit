@@ -9,12 +9,12 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata: Metadata = {
   title: "Hakkımızda",
   description:
-    "1998'den bu yana geri dönüşüm ve atık yönetimi alanında hizmet veren İkizler Kağıt: tarihçemiz, vizyonumuz, misyonumuz, tesisimiz ve sertifikalarımız.",
+    "1998'den bu yana geri dönüşüm ve atık yönetimi alanında hizmet veren İkizler Kağıt: tarihçemiz, vizyonumuz, misyonumuz, tesisimiz ve lisans belgelerimiz.",
   alternates: { canonical: "/kurumsal/" },
   openGraph: {
     title: "Hakkımızda",
     description:
-      "1998'den bu yana geri dönüşüm ve atık yönetimi alanında hizmet veren İkizler Kağıt: tarihçemiz, vizyonumuz, misyonumuz, tesisimiz ve sertifikalarımız.",
+      "1998'den bu yana geri dönüşüm ve atık yönetimi alanında hizmet veren İkizler Kağıt: tarihçemiz, vizyonumuz, misyonumuz, tesisimiz ve lisans belgelerimiz.",
     url: "/kurumsal/",
     siteName: "İkizler Kağıt",
     locale: "tr_TR",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Hakkımızda",
     description:
-      "1998'den bu yana geri dönüşüm ve atık yönetimi alanında hizmet veren İkizler Kağıt: tarihçemiz, vizyonumuz, misyonumuz, tesisimiz ve sertifikalarımız.",
+      "1998'den bu yana geri dönüşüm ve atık yönetimi alanında hizmet veren İkizler Kağıt: tarihçemiz, vizyonumuz, misyonumuz, tesisimiz ve lisans belgelerimiz.",
     images: ["/assets/img/slider01.png"],
   },
 };

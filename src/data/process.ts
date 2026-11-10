@@ -31,7 +31,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
   {
     number: "04",
     image: "/assets/img/process/geri-kazanim.webp",
-    alt: "Geri kazanılmış temiz kağıt ruloları ve yuvarlanmış kağıt tüpleri yığını",
+    alt: "Tesis sahasında kamyona yüklenmeye hazır preslenmiş balya yığınları",
     title: "Geri Kazanım",
     text: "Atıkları ekonomiye kazandırırız.",
   },

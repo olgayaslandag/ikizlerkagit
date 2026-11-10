@@ -85,10 +85,17 @@ export default function ContactFormSection() {
                 </span>
               </span>
               <span className="contact-info-card">
+                <i className="bi bi-map" />
+                <span>
+                  <small>Hizmet Bölgemiz</small>
+                  İstanbul ve Tekirdağ
+                </span>
+              </span>
+              <span className="contact-info-card">
                 <i className="bi bi-clock" />
                 <span>
                   <small>Çalışma Saatleri</small>
-                  Pzt–Cum 08:00–18:00
+                  Pzt–Cmt 08:00–18:00
                 </span>
               </span>
             </div>

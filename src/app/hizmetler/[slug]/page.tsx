@@ -135,7 +135,7 @@ export default async function ServicePage({
         addressCountry: "TR",
       },
     },
-    areaServed: seo?.region ?? "İstanbul ve çevresi",
+    areaServed: seo?.region ?? "İstanbul ve Tekirdağ",
     hasCredential: seo?.certifications
       ? seo.certifications.map((cert) => ({
           "@type": "OccupationalCredential",

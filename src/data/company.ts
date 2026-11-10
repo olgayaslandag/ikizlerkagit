@@ -11,7 +11,7 @@ export const COMPANY = {
     visionTitle: "Sürdürülebilir bir gelecek için öncü olmak.",
     visionText: [
       "Atık yönetiminde en ileri teknolojileri kullanarak, çevreye duyarlı ve ekonomik değer yaratan çözümlerle sektörde örnek firma olmak.",
-      "İstanbul'da ve Türkiye'de geri dönüşümün standartlarını yükseltmeyi; atığı kaynak olarak gören bir anlayışla kentsel ve endüstriyel atık yönetiminin geleceğini şekillendirmeyi hedefliyoruz.",
+      "İstanbul ve Tekirdağ'da geri dönüşümün standartlarını yükseltmeyi; atığı kaynak olarak gören bir anlayışla kentsel ve endüstriyel atık yönetiminin geleceğini şekillendirmeyi hedefliyoruz.",
       "Lisanslı ve şeffaf süreçlerimizle müşterilerimize, iş ortaklarımıza ve topluma uzun vadeli değer sağlayan bir çözüm ortağı olarak anılmak istiyoruz.",
     ],
     missionEyebrow: "MİSYONUMUZ",
@@ -83,7 +83,7 @@ export const COMPANY = {
       },
     ],
     tesisProcessNote:
-      "Tesisimizde süreç, atığın kaynağında toplanmasıyla başlar; lisanslı araçlarla taşıma, tesisimizde ayrıştırma ve presleme adımlarıyla devam eder ve son olarak lisanslı geri kazanım ortaklarımız aracılığıyla yeniden üretime kazandırılır. Her adım kayıt altına alınır ve raporlanır.",
+      "Tesisimizde süreç, atığın kaynağında toplanmasıyla başlar; lisanslı araçlarla taşıma, tesisimizde ayrıştırma ve presleme adımlarıyla devam eder ve son olarak lisanslı geri kazanım ortaklarımız aracılığıyla yeniden üretime kazandırılır.",
   },
 
   partners: {

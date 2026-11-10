@@ -64,7 +64,7 @@ export default function PaletPage() {
         addressCountry: "TR",
       },
     },
-    areaServed: "İstanbul ve çevresi",
+    areaServed: "İstanbul ve Tekirdağ",
     url: "https://ikizlerkagit.com.tr/palet/",
     image: "https://ikizlerkagit.com.tr/assets/img/palet/palet-hero.webp",
   };

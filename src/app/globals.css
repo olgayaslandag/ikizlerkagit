@@ -745,6 +745,13 @@ footer a {
     font-size: 14px;
     line-height: 2.1;
 }
+/* Footer iletişim kolonundaki link olmayan bilgi satırları — footer a ile aynı tipografi */
+.footer-contact-info {
+    display: block;
+    color: #818782;
+    font-size: 14px;
+    line-height: 2.1;
+}
 .footer-brand-text {
     color: #6c726e;
     font-size: 14px;

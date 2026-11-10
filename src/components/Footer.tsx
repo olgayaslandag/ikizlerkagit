@@ -102,6 +102,12 @@ export default function Footer({ services }: { services: Service[] }) {
             <Link href="/iletisim/">
               <i className="bi bi-geo-alt" /> Esenyurt, İstanbul
             </Link>
+            <span className="footer-contact-info">
+              <i className="bi bi-clock" /> Çalışma Saatleri: Pzt–Cmt 08:00–18:00
+            </span>
+            <span className="footer-contact-info">
+              <i className="bi bi-map" /> Hizmet Bölgesi: İstanbul ve Tekirdağ
+            </span>
           </div>
         </div>
         <div className="footer-bottom">
