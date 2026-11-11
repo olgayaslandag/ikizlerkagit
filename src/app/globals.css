@@ -2393,3 +2393,12 @@ footer a {
         bottom: max(16px, env(safe-area-inset-bottom, 0px));
     }
 }
+/* Tesisimiz sayfası ilk görseli */
+.about-image--tesis {
+    height: 390px;
+}
+@media (max-width: 991px) {
+    .about-image--tesis {
+        height: 260px;
+    }
+}

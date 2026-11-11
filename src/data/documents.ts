@@ -22,4 +22,13 @@ export const DOCUMENTS: DocumentItem[] = [
     previewSrc: "/assets/belgeler/cevre-lisans-belgesi-ust-yazi-onizleme.jpg",
     fileType: "pdf",
   },
+  {
+    title: "ISO 15713:2009 Gizli Malzemelerin Güvenli İmhası Sertifikası",
+    date: "Geçerlilik: 28.10.2021 – 27.10.2027",
+    description:
+      "DSR Certification tarafından denetlenen gizli malzemelerin güvenli imhası yönetim sistemimiz, ISO 15713:2009 standardına uygunluğu belgelendirir. Sertifika No: DCMS-24.10.309.",
+    fileSrc: "/assets/belgeler/iso-15713.pdf",
+    previewSrc: "/assets/belgeler/iso-15713-onizleme.jpg",
+    fileType: "pdf",
+  },
 ];

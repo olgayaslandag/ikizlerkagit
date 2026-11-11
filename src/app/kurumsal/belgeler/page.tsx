@@ -10,12 +10,12 @@ import { DOCUMENTS } from "@/data/documents";
 export const metadata: Metadata = {
   title: "Belgeler & Lisanslar",
   description:
-    "İkizler Kağıt'ın Çevre İzin ve Lisans Belgesi ile lisans üst yazısı. Resmi belgelerimizi bu sayfadan görüntüleyebilir ve indirebilirsiniz.",
+    "İkizler Kağıt'ın Çevre İzin ve Lisans Belgesi, lisans üst yazısı ve ISO 15713 Gizli Malzemelerin Güvenli İmhası Sertifikası. Resmi belgelerimizi bu sayfadan görüntüleyebilir ve indirebilirsiniz.",
   alternates: { canonical: "/kurumsal/belgeler/" },
   openGraph: {
     title: "Belgeler & Lisanslar",
     description:
-      "İkizler Kağıt'ın Çevre İzin ve Lisans Belgesi ile lisans üst yazısı. Resmi belgelerimizi bu sayfadan görüntüleyebilir ve indirebilirsiniz.",
+      "İkizler Kağıt'ın Çevre İzin ve Lisans Belgesi, lisans üst yazısı ve ISO 15713 Gizli Malzemelerin Güvenli İmhası Sertifikası. Resmi belgelerimizi bu sayfadan görüntüleyebilir ve indirebilirsiniz.",
     url: "/kurumsal/belgeler/",
     siteName: "İkizler Kağıt",
     locale: "tr_TR",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Belgeler & Lisanslar",
     description:
-      "İkizler Kağıt'ın Çevre İzin ve Lisans Belgesi ile lisans üst yazısı. Resmi belgelerimizi bu sayfadan görüntüleyebilir ve indirebilirsiniz.",
+      "İkizler Kağıt'ın Çevre İzin ve Lisans Belgesi, lisans üst yazısı ve ISO 15713 Gizli Malzemelerin Güvenli İmhası Sertifikası. Resmi belgelerimizi bu sayfadan görüntüleyebilir ve indirebilirsiniz.",
     images: ["/assets/img/slider01.png"],
   },
 };
@@ -58,7 +58,9 @@ export default function BelgelerPage() {
               faaliyetlerimizi, Çevre, Şehircilik ve İklim Değişikliği
               Bakanlığı tarafından verilen izin ve lisanslar çerçevesinde
               yürütüyoruz. Resmi belgelerimize bu sayfadan
-              ulaşabilirsiniz.
+              ulaşabilirsiniz. Ayrıca gizli malzemelerin güvenli imhası
+              alanında ISO 15713:2009 sertifikamızla hizmetlerimizi
+              belgelendiriyoruz.
             </p>
           </div>
         </section>
@@ -76,7 +78,7 @@ export default function BelgelerPage() {
             </div>
             <div className="row g-4 mt-2">
               {DOCUMENTS.map((doc) => (
-                <div className="col-md-6" key={doc.title}>
+                <div className="col-md-6 col-lg-4" key={doc.title}>
                   <article className="document-card reveal h-100">
                     <a
                       href={doc.fileSrc}
@@ -144,7 +146,7 @@ export default function BelgelerPage() {
                 Belgelerimiz hakkında sorularınız mı var?
               </h2>
               <p style={{ color: "#c9d6cd", maxWidth: 560, lineHeight: 1.7 }}>
-                Çevre izin ve lisans belgelerimizle ilgili tüm sorularınız için
+                Belgelerimiz ve sertifikalarımızla ilgili tüm sorularınız için
                 ekibimizle iletişime geçebilirsiniz.
               </p>
               <Link className="button button-green mt-3" href="/iletisim/">

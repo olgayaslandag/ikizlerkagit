@@ -93,20 +93,17 @@ export default function Footer({ services }: { services: Service[] }) {
           ))}
           <div className="col-lg-2">
             <h4>İletişim</h4>
+            <Link href="/iletisim/">
+              <i className="bi bi-geo-alt" /> Selahaddin Eyyubi Mah.3151.Sok.No:7-9 Esenyurt/İstanbul
+            </Link>
             <a href="tel:+902128861090">
               <i className="bi bi-telephone" /> +90 212 886 10 90
             </a>
             <a href="mailto:info@ikizlerkagit.com.tr">
               <i className="bi bi-envelope" /> info@ikizlerkagit.com.tr
             </a>
-            <Link href="/iletisim/">
-              <i className="bi bi-geo-alt" /> Esenyurt, İstanbul
-            </Link>
             <span className="footer-contact-info">
-              <i className="bi bi-clock" /> Çalışma Saatleri: Pzt–Cmt 08:00–18:00
-            </span>
-            <span className="footer-contact-info">
-              <i className="bi bi-map" /> Hizmet Bölgesi: İstanbul ve Tekirdağ
+              <i className="bi bi-clock" /> Pzt–Cmt 08:00–18:00
             </span>
           </div>
         </div>

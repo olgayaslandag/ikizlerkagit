@@ -61,13 +61,19 @@ export default function TesisimizPage() {
                 {text}
               </p>
             ))}
-            <a href="/assets/img/slider01.png" data-lightbox data-lightbox-group="tesis-hero" data-lightbox-alt="İkizler Kağıt geri dönüşüm tesisi" className="lightbox-trigger">
+            <a
+              href="/assets/img/hero/hero01.webp"
+              data-lightbox
+              data-lightbox-group="tesis-hero"
+              data-lightbox-alt="İkizler Kağıt geri dönüşüm tesisi"
+              className="lightbox-trigger"
+            >
               <Image
-                className="about-image reveal mt-4"
-                src="/assets/img/slider01.png"
+                className="about-image about-image--tesis reveal mt-4"
+                src="/assets/img/hero/hero01.webp"
                 alt="İkizler Kağıt geri dönüşüm tesisi"
-                width={1100}
-                height={733}
+                width={1536}
+                height={1024}
               />
             </a>
           </div>

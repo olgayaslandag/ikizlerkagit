@@ -81,7 +81,7 @@ export default function ContactFormSection() {
                 <i className="bi bi-geo-alt" />
                 <span>
                   <small>Adres</small>
-                  Esenyurt, İstanbul
+                  Selahaddin Eyyubi Mah.3151.Sok.No:7-9 Esenyurt/İstanbul
                 </span>
               </span>
               <span className="contact-info-card">
@@ -180,7 +180,7 @@ export default function ContactFormSection() {
             <div className="contact-map mt-4">
               <iframe
                 title="İkizler Kağıt konum"
-                src="https://www.google.com/maps?q=Esenyurt,+İstanbul&output=embed"
+                src="https://www.google.com/maps?q=Selahaddin+Eyyubi+Mah.+3151.+Sok.+No:7-9+Esenyurt/İstanbul&output=embed"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
