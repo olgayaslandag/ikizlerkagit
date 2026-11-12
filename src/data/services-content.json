@@ -607,7 +607,7 @@
         },
         {
           "label": "Sertifikalar",
-          "value": "Çevre İzin ve Lisans Belgesi · İş Güvenliği"
+          "value": "Çevre İzin ve Lisans Belgesi"
         },
         {
           "label": "Kontrol",
@@ -673,8 +673,7 @@
     "seo": {
       "region": "İstanbul ve Tekirdağ",
       "certifications": [
-        "Çevre İzin ve Lisans Belgesi",
-        "İş Güvenliği"
+        "Çevre İzin ve Lisans Belgesi"
       ],
       "highlights": [
         "Süreç destekli personel",
