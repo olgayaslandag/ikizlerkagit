@@ -802,7 +802,7 @@
         },
         {
           "label": "Sertifikalar",
-          "value": "Çevre İzin ve Lisans Belgesi · Geri Kazanım İzni"
+          "value": "Çevre İzin ve Lisans Belgesi"
         },
         {
           "label": "Takip",
@@ -868,8 +868,7 @@
     "seo": {
       "region": "Tüm Türkiye",
       "certifications": [
-        "Çevre İzin ve Lisans Belgesi",
-        "Geri Kazanım İzni"
+        "Çevre İzin ve Lisans Belgesi"
       ],
       "highlights": [
         "Çevrenin korunması",
