@@ -7,6 +7,7 @@ import "./globals.css";
 import Preloader from "@/components/Preloader";
 import Lightbox from "@/components/Lightbox";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import CookieConsent from "@/components/CookieConsent";
 
 const manrope = localFont({
   src: [{ path: "./fonts/manrope.woff2", weight: "200 800", style: "normal" }],
@@ -56,6 +57,7 @@ export default function RootLayout({
         <Preloader />
         <Lightbox />
         <WhatsAppButton />
+        <CookieConsent />
         {children}
       </body>
     </html>

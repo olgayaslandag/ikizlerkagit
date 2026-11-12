@@ -109,7 +109,11 @@ export default function Footer({ services }: { services: Service[] }) {
         </div>
         <div className="footer-bottom">
           <span>© {year} İkizler Kağıt. Tüm hakları saklıdır.</span>
-          <Link href="/kvkk/">Gizlilik Politikası</Link>
+          <div className="footer-bottom-links">
+            <Link href="/kvkk/">KVKK Aydınlatma Metni</Link>
+            <Link href="/gizlilik-politikasi/">Gizlilik Politikası</Link>
+            <Link href="/cerez-politikasi/">Çerez Politikası</Link>
+          </div>
         </div>
       </div>
     </footer>

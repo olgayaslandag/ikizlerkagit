@@ -15,6 +15,7 @@ export default function ContactFormSection() {
   const [errorMessage, setErrorMessage] = useState("");
   const [ad, setAd] = useState("");
   const [eposta, setEposta] = useState("");
+  const [telefon, setTelefon] = useState("");
   const [mesaj, setMesaj] = useState("");
   const [website, setWebsite] = useState("");
 
@@ -26,12 +27,13 @@ export default function ContactFormSection() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ad, eposta, mesaj, website }),
+        body: JSON.stringify({ ad, eposta, telefon, mesaj, website }),
       });
       if (res.ok) {
         setStatus("success");
         setAd("");
         setEposta("");
+        setTelefon("");
         setMesaj("");
         setWebsite("");
       } else {
@@ -126,6 +128,18 @@ export default function ContactFormSection() {
                     required
                     value={eposta}
                     onChange={(e) => setEposta(e.target.value)}
+                  />
+                </div>
+                <div className="col-12">
+                  <input
+                    type="tel"
+                    name="telefon"
+                    className="form-control"
+                    placeholder="Telefon Numaranız"
+                    aria-label="Telefon Numaranız"
+                    required
+                    value={telefon}
+                    onChange={(e) => setTelefon(e.target.value)}
                   />
                 </div>
                 <div className="col-12">

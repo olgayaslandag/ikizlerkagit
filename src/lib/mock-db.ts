@@ -57,6 +57,7 @@ export interface ContactMessage {
   id: string;
   ad: string;
   eposta: string;
+  telefon: string;
   mesaj: string;
   receivedAt: string;
   ip?: string;
@@ -69,6 +70,7 @@ export function addContactMessage(input: Omit<ContactMessage, "id" | "receivedAt
     id: `msg-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
     ad: input.ad,
     eposta: input.eposta,
+    telefon: input.telefon,
     mesaj: input.mesaj,
     receivedAt: new Date().toISOString(),
     ip: input.ip,

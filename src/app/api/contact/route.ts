@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import nodemailer from "nodemailer";
 import { addContactMessage } from "@/lib/mock-db";
 
 const RATE_LIMIT = 5;
@@ -27,6 +28,15 @@ function isValidEmail(v: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
 }
 
+function escapeHtml(v: string): string {
+  return v
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 export async function POST(req: Request) {
   let body: Record<string, unknown> | null = null;
   try {
@@ -37,6 +47,7 @@ export async function POST(req: Request) {
 
   const ad = String(body?.ad ?? "").trim();
   const eposta = String(body?.eposta ?? "").trim();
+  const telefon = String(body?.telefon ?? "").trim();
   const mesaj = String(body?.mesaj ?? "").trim();
   const website = String(body?.website ?? "").trim(); // honeypot
 
@@ -55,6 +66,9 @@ export async function POST(req: Request) {
   if (!isValidEmail(eposta)) {
     return NextResponse.json({ error: "Geçerli bir e-posta adresi giriniz." }, { status: 400 });
   }
+  if (telefon.length < 7 || telefon.length > 20) {
+    return NextResponse.json({ error: "Geçerli bir telefon numarası giriniz." }, { status: 400 });
+  }
   if (mesaj.length < 10 || mesaj.length > 2000) {
     return NextResponse.json({ error: "Mesaj 10–2000 karakter olmalıdır." }, { status: 400 });
   }
@@ -64,7 +78,62 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Çok fazla istek gönderdiniz. Lütfen daha sonra tekrar deneyin." }, { status: 429 });
   }
 
-  const msg = addContactMessage({ ad, eposta, mesaj, ip });
+  const msg = addContactMessage({ ad, eposta, telefon, mesaj, ip });
+
+  // E-posta bildirimi (SMTP)
+  try {
+    const host = process.env.SMTP_HOST;
+    const port = Number(process.env.SMTP_PORT || 465);
+    const secure =
+      process.env.SMTP_SECURE === "true" || port === 465;
+    const user = process.env.SMTP_USER;
+    const pass = process.env.SMTP_PASS;
+    const from = process.env.SMTP_FROM || user;
+    const to = process.env.MAIL_TO || user;
+
+    if (host && user && pass && to) {
+      const transporter = nodemailer.createTransport({
+        host,
+        port,
+        secure,
+        auth: { user, pass },
+      });
+
+      const subject = `Yeni İletişim Formu Mesajı — ${ad}`;
+      const text = [
+        `Ad Soyad: ${ad}`,
+        `E-posta: ${eposta}`,
+        `Telefon: ${telefon}`,
+        `IP: ${ip}`,
+        "",
+        "Mesaj:",
+        mesaj,
+      ].join("\\n");
+
+      const html = `
+        <h2>Yeni İletişim Formu Mesajı</h2>
+        <p><strong>Ad Soyad:</strong> ${escapeHtml(ad)}</p>
+        <p><strong>E-posta:</strong> ${escapeHtml(eposta)}</p>
+        <p><strong>Telefon:</strong> ${escapeHtml(telefon)}</p>
+        <p><strong>IP:</strong> ${escapeHtml(ip)}</p>
+        <hr />
+        <p><strong>Mesaj:</strong></p>
+        <p>${escapeHtml(mesaj).replace(/\\n/g, "<br/>")}</p>
+      `;
+
+      await transporter.sendMail({
+        from,
+        to,
+        replyTo: eposta,
+        subject,
+        text,
+        html,
+      });
+    }
+  } catch (err) {
+    console.error("SMTP send failed:", err);
+  }
+
   return NextResponse.json(
     { data: { id: msg.id, receivedAt: msg.receivedAt }, meta: { generatedAt: new Date().toISOString() } },
     { status: 201 }

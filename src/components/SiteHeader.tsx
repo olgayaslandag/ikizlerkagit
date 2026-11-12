@@ -46,6 +46,8 @@ export default function SiteHeader({ services }: { services: Service[] }) {
       { href: "/kurumsal/belgeler/", label: "Belgeler & Lisanslar" },
       { href: "/kurumsal/surdurulebilirlik/", label: "Sürdürülebilirlik" },
       { href: "/kvkk/", label: "KVKK Metni" },
+      { href: "/gizlilik-politikasi/", label: "Gizlilik Politikası" },
+      { href: "/cerez-politikasi/", label: "Çerez Politikası" },
     ] },
     { href: "/hizmetler/", label: "Hizmetlerimiz", dropdown: true, children: SERVICE_CHILDREN },
     { href: "/palet/", label: "İkizler Palet" },

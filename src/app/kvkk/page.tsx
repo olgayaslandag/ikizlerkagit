@@ -79,7 +79,8 @@ export default function KvkkPage() {
 
               <h2>6. Çerez Politikası</h2>
               <p>
-                Web sitemizde kullanıcı deneyimini iyileştirmek amacıyla çerez kullanılmamaktadır; yalnızca temel oturum çerezleri (varsa) tarayıcınızda saklanır. Çerez tercihlerinizi tarayıcı ayarlarınızdan yönetebilirsiniz.
+                Web sitemizde kullanıcı deneyimini iyileştirmek ve güvenliği sağlamak amacıyla çerezler kullanılmaktadır. Çerez türleri ve yönetimi hakkında detaylı bilgi için{" "}
+                <a href="/cerez-politikasi/">Çerez Politikası</a> sayfamızı inceleyebilirsiniz.
               </p>
 
               <h2>7. İletişim</h2>
